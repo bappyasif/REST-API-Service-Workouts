@@ -21,6 +21,8 @@ WS.sendRequest(findTestObject('Dummy Example/Delete Employee'))
 
 WS.sendRequest(findTestObject('Dummy Example/Update Employee'))
 
+WS.sendRequest(findTestObject('Dummy Example/Create New Employee Record'))
+
 WS.sendRequestAndVerify(findTestObject('Dummy Example/All Employees'))
 
 WS.sendRequestAndVerify(findTestObject('Dummy Example/Specefic Employee'))
@@ -28,4 +30,6 @@ WS.sendRequestAndVerify(findTestObject('Dummy Example/Specefic Employee'))
 WS.sendRequestAndVerify(findTestObject('Dummy Example/Delete Employee'))
 
 WS.sendRequestAndVerify(findTestObject('Dummy Example/Update Employee'))
+
+WS.sendRequestAndVerify(findTestObject('Dummy Example/Create New Employee Record'))
 

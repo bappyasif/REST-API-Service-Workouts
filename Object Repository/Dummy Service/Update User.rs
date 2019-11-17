@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>Get all employee data</description>
-   <name>All Employees</name>
+   <description>Delete User</description>
+   <name>Update User</name>
    <tag></tag>
-   <elementGuidId>b04a5d21-2744-46e3-bc86-4e1374640ff5</elementGuidId>
+   <elementGuidId>c35f8c42-5dcb-48ff-b843-3014a52bd745</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://dummy.restapiexample.com/api/v1/employees</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>https://gorest.co.in/public-api/users/2?access-token=Fz2YsxVmP8H35Y6CsTycMToZ0ntUQMJlLNlG</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -31,23 +35,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-
-
-//assertThat(response.getResponseText()).contains('&quot;id&quot;:&quot;1&quot;,&quot;employee_name&quot;:&quot;paul999&quot;,&quot;employee_salary&quot;:&quot;1123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;')
-
-
-//assertThat(response.getResponseText()).contains('&quot;id&quot;:&quot;1&quot;')
-
-
-//WS.verifyElementPropertyValue(response, '[3958].employee_name', 'Bappy')
-
-
-//WS.verifyElementPropertyValue(response, '[3958].id', '111281')
-
-
-WS.verifyElementPropertyValue(response, '[3926].id', '111281')
-
-WS.verifyElementPropertyValue(response, '[3926].employee_name', 'Bappy')</verificationScript>
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
