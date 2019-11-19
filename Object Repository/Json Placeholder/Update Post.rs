@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;: \&quot;1\&quot;,\n  \&quot;title\&quot;: \&quot;foo\&quot;,\n  \&quot;body\&quot;: \&quot;some somenskcsjgbisnv nsisanvnjknvoge ckjsijnslkb Updated\&quot;,\n  \&quot;userId\&quot;: \&quot;2\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;: \&quot;2\&quot;,\n  \&quot;title\&quot;: \&quot;${post_title}\&quot;,\n  \&quot;body\&quot;: \&quot;some somenskcsjgbisnv nsisanvnjknvoge ckjsijnslkb Updated\&quot;,\n  \&quot;userId\&quot;: \&quot;${user_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -29,6 +29,20 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>26</defaultValue>
+      <description></description>
+      <id>6f1eef7f-5de8-4917-9669-d7885f17bc05</id>
+      <masked>false</masked>
+      <name>user_id</name>
+   </variables>
+   <variables>
+      <defaultValue>'Updated Recently'</defaultValue>
+      <description></description>
+      <id>914e4533-76f8-4415-9c2c-21f9732016de</id>
+      <masked>false</masked>
+      <name>post_title</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -42,6 +56,9 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+
+//WS.verifyElementPropertyValue(response, 'title', '')
+WS.verifyElementPropertyValue(response, 'title', 'Updated Recently')
+WS.verifyElementPropertyValue(response, 'userId', '26')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
