@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Post Manipulation Test Suite" time="12" tests="0" failures="4" errors="0">
+    <testsuite name="Post Manipulation Test Suite" tests="0" failures="4" errors="0" time="12" timestamp="2019-11-20 21:42:11" hostname="BaPpY - 192.168.0.108" id="Test Suites/Data Driven/Post Manipulation Test Suite">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191120_214209\\Data Driven\\Post Manipulation Test Suite\\20191120_214209"/>
+            <property name="logFiles" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191120_214209\\Data Driven\\Post Manipulation Test Suite\\20191120_214209\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="BaPpY - 192.168.0.108"/>
+            <property name="hostAddress" value="192.168.0.108"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/Data Driven/Placeholder Service Test Case" classname="Test Cases/Data Driven/Placeholder Service Test Case" status="FAILED">
+            <failure type="FAILED" message="Test Cases/Data Driven/Placeholder Service Test Case FAILED.&#xA;Reason:&#xA;Assertion failed: &#xA;&#xA;assert evaluate(extractId) == post_id&#xA;       |        |          |  |&#xA;       11       11         |  11&#xA;                           false&#xA;&#xD;&#xA;&#x9;at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-11-20 21:42:12 - [TEST_CASE][FAILED] - Test Cases/Data Driven/Placeholder Service Test Case: Test Cases/Data Driven/Placeholder Service Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert evaluate(extractId) == post_id
+       |        |          |  |
+       11       11         |  11
+                           false
+&#xD;
+	at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-11-20 21:42:12 - [TEST_STEP][PASSED] - println(post_id): null&#xD;
+&#xD;
+2019-11-20 21:42:12 - [TEST_STEP][PASSED] - println(post_title): null&#xD;
+&#xD;
+2019-11-20 21:42:12 - [TEST_STEP][PASSED] - println(updated_title): null&#xD;
+&#xD;
+2019-11-20 21:42:12 - [TEST_STEP][PASSED] - postResponse = sendRequest(findTestObject("Json Placeholder/Create Post", ["user_id":post_id, "post_title":post_title])): Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:14 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191120_214209\Data Driven\Post Manipulation Test Suite\20191120_214209\requests\main\0.har&#xD;
+&#xD;
+2019-11-20 21:42:14 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:14 - [TEST_STEP][PASSED] - jsonRequest = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-20 21:42:14 - [TEST_STEP][PASSED] - postContent = jsonRequest.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-20 21:42:14 - [TEST_STEP][PASSED] - extractId = userId: null&#xD;
+&#xD;
+2019-11-20 21:42:14 - [TEST_STEP][PASSED] - extractTitle = title: null&#xD;
+&#xD;
+2019-11-20 21:42:14 - [TEST_STEP][PASSED] - updatedResponse = sendRequest(findTestObject("Json Placeholder/Update Post", ["user_id":post_id, "post_title":updated_title])): Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:16 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191120_214209\Data Driven\Post Manipulation Test Suite\20191120_214209\requests\main\1.har&#xD;
+&#xD;
+2019-11-20 21:42:16 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:16 - [TEST_STEP][PASSED] - updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-11-20 21:42:16 - [TEST_STEP][PASSED] - extractUpdatedPostTitle = title: null&#xD;
+&#xD;
+2019-11-20 21:42:16 - [TEST_STEP][PASSED] - assert evaluate(extractId) == post_id: null</system-out>
+            <system-err>2019-11-20 21:42:12 - [TEST_CASE][FAILED] - Test Cases/Data Driven/Placeholder Service Test Case: Test Cases/Data Driven/Placeholder Service Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert evaluate(extractId) == post_id
+       |        |          |  |
+       11       11         |  11
+                           false
+&#xD;
+	at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)</system-err>
+        </testcase>
+        <testcase name="Test Cases/Data Driven/Placeholder Service Test Case" classname="Test Cases/Data Driven/Placeholder Service Test Case" status="FAILED">
+            <failure type="FAILED" message="Test Cases/Data Driven/Placeholder Service Test Case FAILED.&#xA;Reason:&#xA;Assertion failed: &#xA;&#xA;assert evaluate(extractId) == post_id&#xA;       |        |          |  |&#xA;       18       18         |  18&#xA;                           false&#xA;&#xD;&#xA;&#x9;at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-11-20 21:42:16 - [TEST_CASE][FAILED] - Test Cases/Data Driven/Placeholder Service Test Case: Test Cases/Data Driven/Placeholder Service Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert evaluate(extractId) == post_id
+       |        |          |  |
+       18       18         |  18
+                           false
+&#xD;
+	at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-11-20 21:42:16 - [TEST_STEP][PASSED] - println(post_id): null&#xD;
+&#xD;
+2019-11-20 21:42:16 - [TEST_STEP][PASSED] - println(post_title): null&#xD;
+&#xD;
+2019-11-20 21:42:16 - [TEST_STEP][PASSED] - println(updated_title): null&#xD;
+&#xD;
+2019-11-20 21:42:16 - [TEST_STEP][PASSED] - postResponse = sendRequest(findTestObject("Json Placeholder/Create Post", ["user_id":post_id, "post_title":post_title])): Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:17 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191120_214209\Data Driven\Post Manipulation Test Suite\20191120_214209\requests\main\2.har&#xD;
+&#xD;
+2019-11-20 21:42:17 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:17 - [TEST_STEP][PASSED] - jsonRequest = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-20 21:42:17 - [TEST_STEP][PASSED] - postContent = jsonRequest.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-20 21:42:17 - [TEST_STEP][PASSED] - extractId = userId: null&#xD;
+&#xD;
+2019-11-20 21:42:17 - [TEST_STEP][PASSED] - extractTitle = title: null&#xD;
+&#xD;
+2019-11-20 21:42:17 - [TEST_STEP][PASSED] - updatedResponse = sendRequest(findTestObject("Json Placeholder/Update Post", ["user_id":post_id, "post_title":updated_title])): Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:19 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191120_214209\Data Driven\Post Manipulation Test Suite\20191120_214209\requests\main\3.har&#xD;
+&#xD;
+2019-11-20 21:42:19 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:19 - [TEST_STEP][PASSED] - updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-11-20 21:42:19 - [TEST_STEP][PASSED] - extractUpdatedPostTitle = title: null&#xD;
+&#xD;
+2019-11-20 21:42:19 - [TEST_STEP][PASSED] - assert evaluate(extractId) == post_id: null</system-out>
+            <system-err>2019-11-20 21:42:16 - [TEST_CASE][FAILED] - Test Cases/Data Driven/Placeholder Service Test Case: Test Cases/Data Driven/Placeholder Service Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert evaluate(extractId) == post_id
+       |        |          |  |
+       18       18         |  18
+                           false
+&#xD;
+	at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)</system-err>
+        </testcase>
+        <testcase name="Test Cases/Data Driven/Placeholder Service Test Case" classname="Test Cases/Data Driven/Placeholder Service Test Case" status="FAILED">
+            <failure type="FAILED" message="Test Cases/Data Driven/Placeholder Service Test Case FAILED.&#xA;Reason:&#xA;Assertion failed: &#xA;&#xA;assert evaluate(extractId) == post_id&#xA;       |        |          |  |&#xA;       22       22         |  22&#xA;                           false&#xA;&#xD;&#xA;&#x9;at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-11-20 21:42:19 - [TEST_CASE][FAILED] - Test Cases/Data Driven/Placeholder Service Test Case: Test Cases/Data Driven/Placeholder Service Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert evaluate(extractId) == post_id
+       |        |          |  |
+       22       22         |  22
+                           false
+&#xD;
+	at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-11-20 21:42:19 - [TEST_STEP][PASSED] - println(post_id): null&#xD;
+&#xD;
+2019-11-20 21:42:19 - [TEST_STEP][PASSED] - println(post_title): null&#xD;
+&#xD;
+2019-11-20 21:42:19 - [TEST_STEP][PASSED] - println(updated_title): null&#xD;
+&#xD;
+2019-11-20 21:42:19 - [TEST_STEP][PASSED] - postResponse = sendRequest(findTestObject("Json Placeholder/Create Post", ["user_id":post_id, "post_title":post_title])): Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:21 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191120_214209\Data Driven\Post Manipulation Test Suite\20191120_214209\requests\main\4.har&#xD;
+&#xD;
+2019-11-20 21:42:21 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:21 - [TEST_STEP][PASSED] - jsonRequest = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-20 21:42:21 - [TEST_STEP][PASSED] - postContent = jsonRequest.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-20 21:42:21 - [TEST_STEP][PASSED] - extractId = userId: null&#xD;
+&#xD;
+2019-11-20 21:42:21 - [TEST_STEP][PASSED] - extractTitle = title: null&#xD;
+&#xD;
+2019-11-20 21:42:21 - [TEST_STEP][PASSED] - updatedResponse = sendRequest(findTestObject("Json Placeholder/Update Post", ["user_id":post_id, "post_title":updated_title])): Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:22 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191120_214209\Data Driven\Post Manipulation Test Suite\20191120_214209\requests\main\5.har&#xD;
+&#xD;
+2019-11-20 21:42:22 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:22 - [TEST_STEP][PASSED] - updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-11-20 21:42:22 - [TEST_STEP][PASSED] - extractUpdatedPostTitle = title: null&#xD;
+&#xD;
+2019-11-20 21:42:22 - [TEST_STEP][PASSED] - assert evaluate(extractId) == post_id: null</system-out>
+            <system-err>2019-11-20 21:42:19 - [TEST_CASE][FAILED] - Test Cases/Data Driven/Placeholder Service Test Case: Test Cases/Data Driven/Placeholder Service Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert evaluate(extractId) == post_id
+       |        |          |  |
+       22       22         |  22
+                           false
+&#xD;
+	at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)</system-err>
+        </testcase>
+        <testcase name="Test Cases/Data Driven/Placeholder Service Test Case" classname="Test Cases/Data Driven/Placeholder Service Test Case" status="FAILED">
+            <failure type="FAILED" message="Test Cases/Data Driven/Placeholder Service Test Case FAILED.&#xA;Reason:&#xA;Assertion failed: &#xA;&#xA;assert evaluate(extractId) == post_id&#xA;       |        |          |  |&#xA;       25       25         |  25&#xA;                           false&#xA;&#xD;&#xA;&#x9;at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-11-20 21:42:22 - [TEST_CASE][FAILED] - Test Cases/Data Driven/Placeholder Service Test Case: Test Cases/Data Driven/Placeholder Service Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert evaluate(extractId) == post_id
+       |        |          |  |
+       25       25         |  25
+                           false
+&#xD;
+	at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-11-20 21:42:22 - [TEST_STEP][PASSED] - println(post_id): null&#xD;
+&#xD;
+2019-11-20 21:42:22 - [TEST_STEP][PASSED] - println(post_title): null&#xD;
+&#xD;
+2019-11-20 21:42:22 - [TEST_STEP][PASSED] - println(updated_title): null&#xD;
+&#xD;
+2019-11-20 21:42:22 - [TEST_STEP][PASSED] - postResponse = sendRequest(findTestObject("Json Placeholder/Create Post", ["user_id":post_id, "post_title":post_title])): Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:23 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191120_214209\Data Driven\Post Manipulation Test Suite\20191120_214209\requests\main\6.har&#xD;
+&#xD;
+2019-11-20 21:42:23 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:23 - [TEST_STEP][PASSED] - jsonRequest = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-20 21:42:23 - [TEST_STEP][PASSED] - postContent = jsonRequest.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-20 21:42:23 - [TEST_STEP][PASSED] - extractId = userId: null&#xD;
+&#xD;
+2019-11-20 21:42:23 - [TEST_STEP][PASSED] - extractTitle = title: null&#xD;
+&#xD;
+2019-11-20 21:42:23 - [TEST_STEP][PASSED] - updatedResponse = sendRequest(findTestObject("Json Placeholder/Update Post", ["user_id":post_id, "post_title":updated_title])): Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:24 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191120_214209\Data Driven\Post Manipulation Test Suite\20191120_214209\requests\main\7.har&#xD;
+&#xD;
+2019-11-20 21:42:24 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-20 21:42:24 - [TEST_STEP][PASSED] - updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-11-20 21:42:24 - [TEST_STEP][PASSED] - extractUpdatedPostTitle = title: null&#xD;
+&#xD;
+2019-11-20 21:42:24 - [TEST_STEP][PASSED] - assert evaluate(extractId) == post_id: null</system-out>
+            <system-err>2019-11-20 21:42:22 - [TEST_CASE][FAILED] - Test Cases/Data Driven/Placeholder Service Test Case: Test Cases/Data Driven/Placeholder Service Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert evaluate(extractId) == post_id
+       |        |          |  |
+       25       25         |  25
+                           false
+&#xD;
+	at Placeholder Service Test Case.run(Placeholder Service Test Case:38)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574264529987.run(TempTestSuite1574264529987.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-11-20 21:42:11 - [TEST_SUITE][INCOMPLETE] - Post Manipulation Test Suite: null</system-out>
+        <system-err>2019-11-20 21:42:11 - [TEST_SUITE][INCOMPLETE] - Post Manipulation Test Suite: null</system-err>
+    </testsuite>
+</testsuites>

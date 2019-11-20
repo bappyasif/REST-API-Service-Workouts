@@ -1,0 +1,58 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Post Manipulation Test Suite,,Post Manipulation Test Suite,,2019-11-20 21:43:21,2019-11-20 21:43:37,16.231s,INCOMPLETE
+,,,,,,,
+Test Cases/Data Driven/Placeholder Service Test Case,,Placeholder Service Test Case,,2019-11-20 21:43:21,2019-11-20 21:43:29,7.633s,FAILED
+println(post_id),,,,2019-11-20 21:43:22,2019-11-20 21:43:22,0.003s,PASSED
+println(post_title),,,,2019-11-20 21:43:22,2019-11-20 21:43:22,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:43:22,2019-11-20 21:43:22,0.000s,PASSED
+"postResponse = sendRequest(findTestObject(""Json Placeholder/Create Post"", [""user_id"":post_id, ""post_title"":post_title]))",,,,2019-11-20 21:43:22,2019-11-20 21:43:26,4.324s,PASSED
+jsonRequest = new groovy.json.JsonSlurper(),,,,2019-11-20 21:43:26,2019-11-20 21:43:26,0.006s,PASSED
+postContent = jsonRequest.parseText(responseBodyContent),,,,2019-11-20 21:43:26,2019-11-20 21:43:26,0.016s,PASSED
+extractId = userId,,,,2019-11-20 21:43:26,2019-11-20 21:43:26,0.000s,PASSED
+extractTitle = title,,,,2019-11-20 21:43:26,2019-11-20 21:43:26,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""Json Placeholder/Update Post"", [""user_id"":post_id, ""post_title"":updated_title]))",,,,2019-11-20 21:43:26,2019-11-20 21:43:29,2.902s,PASSED
+updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()),,,,2019-11-20 21:43:29,2019-11-20 21:43:29,0.000s,PASSED
+extractUpdatedPostTitle = title,,,,2019-11-20 21:43:29,2019-11-20 21:43:29,0.016s,PASSED
+assert post_id == evaluate(extractId),,,,2019-11-20 21:43:29,2019-11-20 21:43:29,0.016s,PASSED
+,,,,,,,
+Test Cases/Data Driven/Placeholder Service Test Case,,Placeholder Service Test Case,,2019-11-20 21:43:29,2019-11-20 21:43:32,2.695s,FAILED
+println(post_id),,,,2019-11-20 21:43:29,2019-11-20 21:43:29,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:43:29,2019-11-20 21:43:29,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:43:29,2019-11-20 21:43:29,0.016s,PASSED
+"postResponse = sendRequest(findTestObject(""Json Placeholder/Create Post"", [""user_id"":post_id, ""post_title"":post_title]))",,,,2019-11-20 21:43:29,2019-11-20 21:43:30,1.453s,PASSED
+jsonRequest = new groovy.json.JsonSlurper(),,,,2019-11-20 21:43:30,2019-11-20 21:43:30,0.000s,PASSED
+postContent = jsonRequest.parseText(responseBodyContent),,,,2019-11-20 21:43:30,2019-11-20 21:43:30,0.000s,PASSED
+extractId = userId,,,,2019-11-20 21:43:30,2019-11-20 21:43:30,0.000s,PASSED
+extractTitle = title,,,,2019-11-20 21:43:30,2019-11-20 21:43:30,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""Json Placeholder/Update Post"", [""user_id"":post_id, ""post_title"":updated_title]))",,,,2019-11-20 21:43:30,2019-11-20 21:43:32,1.194s,PASSED
+updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()),,,,2019-11-20 21:43:32,2019-11-20 21:43:32,0.000s,PASSED
+extractUpdatedPostTitle = title,,,,2019-11-20 21:43:32,2019-11-20 21:43:32,0.000s,PASSED
+assert post_id == evaluate(extractId),,,,2019-11-20 21:43:32,2019-11-20 21:43:32,0.015s,PASSED
+,,,,,,,
+Test Cases/Data Driven/Placeholder Service Test Case,,Placeholder Service Test Case,,2019-11-20 21:43:32,2019-11-20 21:43:35,3.125s,FAILED
+println(post_id),,,,2019-11-20 21:43:32,2019-11-20 21:43:32,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:43:32,2019-11-20 21:43:32,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:43:32,2019-11-20 21:43:32,0.000s,PASSED
+"postResponse = sendRequest(findTestObject(""Json Placeholder/Create Post"", [""user_id"":post_id, ""post_title"":post_title]))",,,,2019-11-20 21:43:32,2019-11-20 21:43:34,1.995s,PASSED
+jsonRequest = new groovy.json.JsonSlurper(),,,,2019-11-20 21:43:34,2019-11-20 21:43:34,0.000s,PASSED
+postContent = jsonRequest.parseText(responseBodyContent),,,,2019-11-20 21:43:34,2019-11-20 21:43:34,0.000s,PASSED
+extractId = userId,,,,2019-11-20 21:43:34,2019-11-20 21:43:34,0.000s,PASSED
+extractTitle = title,,,,2019-11-20 21:43:34,2019-11-20 21:43:34,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""Json Placeholder/Update Post"", [""user_id"":post_id, ""post_title"":updated_title]))",,,,2019-11-20 21:43:34,2019-11-20 21:43:35,1.069s,PASSED
+updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()),,,,2019-11-20 21:43:35,2019-11-20 21:43:35,0.000s,PASSED
+extractUpdatedPostTitle = title,,,,2019-11-20 21:43:35,2019-11-20 21:43:35,0.000s,PASSED
+assert post_id == evaluate(extractId),,,,2019-11-20 21:43:35,2019-11-20 21:43:35,0.031s,PASSED
+,,,,,,,
+Test Cases/Data Driven/Placeholder Service Test Case,,Placeholder Service Test Case,,2019-11-20 21:43:35,2019-11-20 21:43:37,2.333s,FAILED
+println(post_id),,,,2019-11-20 21:43:35,2019-11-20 21:43:35,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:43:35,2019-11-20 21:43:35,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:43:35,2019-11-20 21:43:35,0.000s,PASSED
+"postResponse = sendRequest(findTestObject(""Json Placeholder/Create Post"", [""user_id"":post_id, ""post_title"":post_title]))",,,,2019-11-20 21:43:35,2019-11-20 21:43:36,1.240s,PASSED
+jsonRequest = new groovy.json.JsonSlurper(),,,,2019-11-20 21:43:36,2019-11-20 21:43:36,0.000s,PASSED
+postContent = jsonRequest.parseText(responseBodyContent),,,,2019-11-20 21:43:36,2019-11-20 21:43:36,0.000s,PASSED
+extractId = userId,,,,2019-11-20 21:43:36,2019-11-20 21:43:36,0.000s,PASSED
+extractTitle = title,,,,2019-11-20 21:43:36,2019-11-20 21:43:36,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""Json Placeholder/Update Post"", [""user_id"":post_id, ""post_title"":updated_title]))",,,,2019-11-20 21:43:36,2019-11-20 21:43:37,1.046s,PASSED
+updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()),,,,2019-11-20 21:43:37,2019-11-20 21:43:37,0.000s,PASSED
+extractUpdatedPostTitle = title,,,,2019-11-20 21:43:37,2019-11-20 21:43:37,0.000s,PASSED
+assert post_id == evaluate(extractId),,,,2019-11-20 21:43:37,2019-11-20 21:43:37,0.016s,PASSED

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Placeholder Service Test Case</description>
+   <name>Placeholder Service Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>85f2589e-5fea-4686-abce-ce5873cf32f9</testCaseGuid>
+   <variable>
+      <defaultValue>26</defaultValue>
+      <description></description>
+      <id>57e4a955-63ca-45cb-8488-ee4c9bca02b5</id>
+      <masked>false</masked>
+      <name>post_id</name>
+   </variable>
+   <variable>
+      <defaultValue>'Just Created'</defaultValue>
+      <description></description>
+      <id>0db8eefe-b089-4fa8-b15d-b4635362507d</id>
+      <masked>false</masked>
+      <name>post_title</name>
+   </variable>
+   <variable>
+      <defaultValue>'Just Updated'</defaultValue>
+      <description></description>
+      <id>23bcfc55-089c-49a7-bdec-6658ed0ba49c</id>
+      <masked>false</masked>
+      <name>updated_title</name>
+   </variable>
+</TestCaseEntity>

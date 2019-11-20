@@ -1,0 +1,90 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Post Manipulation Test Suite,,Post Manipulation Test Suite,,2019-11-20 21:49:02,2019-11-20 21:49:18,16.011s,INCOMPLETE
+,,,,,,,
+Test Cases/Data Driven/Placeholder Service Test Case,,Placeholder Service Test Case,,2019-11-20 21:49:02,2019-11-20 21:49:07,4.972s,PASSED
+println(post_id),,,,2019-11-20 21:49:02,2019-11-20 21:49:02,0.073s,PASSED
+println(post_title),,,,2019-11-20 21:49:02,2019-11-20 21:49:02,0.001s,PASSED
+println(updated_title),,,,2019-11-20 21:49:02,2019-11-20 21:49:02,0.000s,PASSED
+"postResponse = sendRequest(findTestObject(""Json Placeholder/Create Post"", [""user_id"":post_id, ""post_title"":post_title]))",,,,2019-11-20 21:49:02,2019-11-20 21:49:06,3.560s,PASSED
+jsonRequest = new groovy.json.JsonSlurper(),,,,2019-11-20 21:49:06,2019-11-20 21:49:06,0.007s,PASSED
+postContent = jsonRequest.parseText(responseBodyContent),,,,2019-11-20 21:49:06,2019-11-20 21:49:06,0.023s,PASSED
+extractId = userId,,,,2019-11-20 21:49:06,2019-11-20 21:49:06,0.002s,PASSED
+extractTitle = title,,,,2019-11-20 21:49:06,2019-11-20 21:49:06,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""Json Placeholder/Update Post"", [""user_id"":post_id, ""post_title"":updated_title]))",,,,2019-11-20 21:49:06,2019-11-20 21:49:07,1.014s,PASSED
+updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()),,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+extractUpdatedPostTitle = title,,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+assert extractId == post_id,,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.016s,PASSED
+assert extractTitle == post_title,,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+assert extractUpdatedPostTitle == updated_title,,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+post_id = extractId,,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+post_title = extractTitle,,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+updated_title = extractUpdatedPostTitle,,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.010s,PASSED
+println(post_id),,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+,,,,,,,
+Test Cases/Data Driven/Placeholder Service Test Case,,Placeholder Service Test Case,,2019-11-20 21:49:07,2019-11-20 21:49:10,2.798s,PASSED
+println(post_id),,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:49:07,2019-11-20 21:49:07,0.000s,PASSED
+"postResponse = sendRequest(findTestObject(""Json Placeholder/Create Post"", [""user_id"":post_id, ""post_title"":post_title]))",,,,2019-11-20 21:49:07,2019-11-20 21:49:08,1.089s,PASSED
+jsonRequest = new groovy.json.JsonSlurper(),,,,2019-11-20 21:49:08,2019-11-20 21:49:08,0.000s,PASSED
+postContent = jsonRequest.parseText(responseBodyContent),,,,2019-11-20 21:49:08,2019-11-20 21:49:08,0.000s,PASSED
+extractId = userId,,,,2019-11-20 21:49:08,2019-11-20 21:49:08,0.000s,PASSED
+extractTitle = title,,,,2019-11-20 21:49:08,2019-11-20 21:49:08,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""Json Placeholder/Update Post"", [""user_id"":post_id, ""post_title"":updated_title]))",,,,2019-11-20 21:49:08,2019-11-20 21:49:10,1.683s,PASSED
+updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()),,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+extractUpdatedPostTitle = title,,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+assert extractId == post_id,,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+assert extractTitle == post_title,,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+assert extractUpdatedPostTitle == updated_title,,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+post_id = extractId,,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.016s,PASSED
+post_title = extractTitle,,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+updated_title = extractUpdatedPostTitle,,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+println(post_id),,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+,,,,,,,
+Test Cases/Data Driven/Placeholder Service Test Case,,Placeholder Service Test Case,,2019-11-20 21:49:10,2019-11-20 21:49:15,5.228s,PASSED
+println(post_id),,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:49:10,2019-11-20 21:49:10,0.000s,PASSED
+"postResponse = sendRequest(findTestObject(""Json Placeholder/Create Post"", [""user_id"":post_id, ""post_title"":post_title]))",,,,2019-11-20 21:49:10,2019-11-20 21:49:12,2.431s,PASSED
+jsonRequest = new groovy.json.JsonSlurper(),,,,2019-11-20 21:49:12,2019-11-20 21:49:12,0.000s,PASSED
+postContent = jsonRequest.parseText(responseBodyContent),,,,2019-11-20 21:49:12,2019-11-20 21:49:12,0.000s,PASSED
+extractId = userId,,,,2019-11-20 21:49:12,2019-11-20 21:49:12,0.000s,PASSED
+extractTitle = title,,,,2019-11-20 21:49:12,2019-11-20 21:49:12,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""Json Placeholder/Update Post"", [""user_id"":post_id, ""post_title"":updated_title]))",,,,2019-11-20 21:49:12,2019-11-20 21:49:15,2.777s,PASSED
+updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()),,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+extractUpdatedPostTitle = title,,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+assert extractId == post_id,,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+assert extractTitle == post_title,,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+assert extractUpdatedPostTitle == updated_title,,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+post_id = extractId,,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+post_title = extractTitle,,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.016s,PASSED
+updated_title = extractUpdatedPostTitle,,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+println(post_id),,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+,,,,,,,
+Test Cases/Data Driven/Placeholder Service Test Case,,Placeholder Service Test Case,,2019-11-20 21:49:15,2019-11-20 21:49:18,2.572s,PASSED
+println(post_id),,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+println(updated_title),,,,2019-11-20 21:49:15,2019-11-20 21:49:15,0.000s,PASSED
+"postResponse = sendRequest(findTestObject(""Json Placeholder/Create Post"", [""user_id"":post_id, ""post_title"":post_title]))",,,,2019-11-20 21:49:15,2019-11-20 21:49:16,1.216s,PASSED
+jsonRequest = new groovy.json.JsonSlurper(),,,,2019-11-20 21:49:16,2019-11-20 21:49:16,0.000s,PASSED
+postContent = jsonRequest.parseText(responseBodyContent),,,,2019-11-20 21:49:16,2019-11-20 21:49:16,0.000s,PASSED
+extractId = userId,,,,2019-11-20 21:49:16,2019-11-20 21:49:16,0.000s,PASSED
+extractTitle = title,,,,2019-11-20 21:49:16,2019-11-20 21:49:16,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""Json Placeholder/Update Post"", [""user_id"":post_id, ""post_title"":updated_title]))",,,,2019-11-20 21:49:16,2019-11-20 21:49:18,1.340s,PASSED
+updateContent = jsonRequest.parseText(updatedResponse.getResponseBodyContent()),,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+extractUpdatedPostTitle = title,,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+assert extractId == post_id,,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+assert extractTitle == post_title,,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+assert extractUpdatedPostTitle == updated_title,,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+post_id = extractId,,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+post_title = extractTitle,,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+updated_title = extractUpdatedPostTitle,,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+println(post_id),,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
+println(post_title),,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.016s,PASSED
+println(updated_title),,,,2019-11-20 21:49:18,2019-11-20 21:49:18,0.000s,PASSED
