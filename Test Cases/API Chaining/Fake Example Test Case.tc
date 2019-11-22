@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Fake REST API  Service Chaining Example Test Case</description>
+   <name>Fake Example Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c076df51-9aa5-4585-bdc1-fd9a96a6a487</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>e31c71c0-4e68-40c9-b1c8-607a194b4090</id>
+      <masked>false</masked>
+      <name>ACTIVITY_ID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8e75c16d-efa8-4648-9b97-2d7a9cff89e8</id>
+      <masked>false</masked>
+      <name>ACTIVITY_TITLE</name>
+   </variable>
+</TestCaseEntity>
