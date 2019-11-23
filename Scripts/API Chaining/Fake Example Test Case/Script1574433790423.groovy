@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-listActivities = WS.sendRequest(findTestObject('REST Example/Get Activities'))
+listActivities = WS.sendRequest(findTestObject('REST Example/Activities Requests/Get Activities'))
 
 def jsonResponse = new groovy.json.JsonSlurper()
 
@@ -27,7 +27,7 @@ println(extract_ID)
 
 println(extract_Boolean)
 
-singleActivity = WS.sendRequest(findTestObject('REST Example/Spcefic Activity', [('activity_ID') : extract_ID]))
+singleActivity = WS.sendRequest(findTestObject('REST Example/Activities Requests/Spcefic Activity', [('activity_ID') : extract_ID]))
 
 def singleResponse = jsonResponse.parseText(singleActivity.getResponseBodyContent())
 
@@ -39,7 +39,7 @@ assert extract_Boolean == single_Boolean
 
 assert extract_ID == single_ID
 
-updateActivity = WS.sendRequest(findTestObject('REST Example/Update Activity', [('activity_ID') : single_ID, ('activity_Title') : 'Updated Activity']))
+updateActivity = WS.sendRequest(findTestObject('REST Example/Activities Requests/Update Activity', [('activity_ID') : single_ID, ('activity_Title') : 'Updated Activity']))
 
 def updateResponse = jsonResponse.parseText(updateActivity.responseBodyContent)
 
@@ -55,10 +55,10 @@ assert ACTIVITY_ID == updated_ID
 
 assert ACTIVITY_TITLE == updated_Title
 
-deleteActivity = WS.sendRequest(findTestObject('REST Example/Delete Post', [('activity_ID') : ACTIVITY_ID]))
+deleteActivity = WS.sendRequest(findTestObject('REST Example/Activities Requests/Delete Post', [('activity_ID') : ACTIVITY_ID]))
 
-//postActivity = WS.sendRequest(findTestObject('REST Example/Post Activity', [('activity_ID') : 23, ('activity_Title') : 'Created Title']))
-postActivity = WS.sendRequest(findTestObject('REST Example/Post Activity', [('activity_ID') : single_ID, ('activity_Title') : 'Created Title']))
+//postActivity = WS.sendRequest(findTestObject('REST Example/Activities Requests/Post Activity', [('activity_ID') : 23, ('activity_Title') : 'Created Title']))
+postActivity = WS.sendRequest(findTestObject('REST Example/Activities Requests/Post Activity', [('activity_ID') : single_ID, ('activity_Title') : 'Created Title']))
 
 def postResponse = jsonResponse.parseText(postActivity.responseBodyContent)
 
@@ -74,5 +74,5 @@ assert created_ID == single_ID
 
 assert creted_Title == 'Created Title'
 
-WS.sendRequestAndVerify(findTestObject('REST Example/Update Activity', [('activity_ID') : 23, ('activity_Title') : 'Updated Activity']))
+WS.sendRequestAndVerify(findTestObject('REST Example/Activities Requests/Update Activity', [('activity_ID') : 23, ('activity_Title') : 'Updated Activity']))
 

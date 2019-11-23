@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Fake Authors Rest API Chaining Requests Test Case</description>
+   <name>Fake Authors Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d47f91e1-2f41-4d8b-8c43-dfc76039fa77</testCaseGuid>
+</TestCaseEntity>

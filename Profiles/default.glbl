@@ -4,4 +4,19 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://fakerestapi.azurewebsites.net/authors/books'</initValue>
+      <name>authorsBooksEndPoint</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/api/Authors'</initValue>
+      <name>authotsEndpoint</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>9</initValue>
+      <name>authorID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
