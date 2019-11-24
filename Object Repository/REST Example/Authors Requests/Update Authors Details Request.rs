@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;ID\&quot;: \&quot;${author_id}\&quot;,\n  \&quot;IDBook\&quot;: \&quot;${book_id}\&quot;,\n  \&quot;FirstName\&quot;: \&quot;${updated_fName}\&quot;,\n  \&quot;LastName\&quot;: \&quot;Doe\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;ID\&quot;: \&quot;${author_id}\&quot;,\n  \&quot;IDBook\&quot;: \&quot;${book_id}\&quot;,\n  \&quot;FirstName\&quot;: \&quot;${updated_fName}\&quot;,\n  \&quot;LastName\&quot;: \&quot;${updated_lName}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

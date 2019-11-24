@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Fake REST API Service Test Suite" time="7" tests="2" failures="0" errors="0">
+    <testsuite name="Fake REST API Service Test Suite" tests="2" failures="0" errors="0" time="7" timestamp="2019-11-24 21:13:45" hostname="BaPpY - 192.168.0.108" id="Test Suites/API Chaining/Fake REST API Service Test Suite">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191124_211344\\API Chaining\\Fake REST API Service Test Suite\\20191124_211344"/>
+            <property name="logFiles" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191124_211344\\API Chaining\\Fake REST API Service Test Suite\\20191124_211344\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="BaPpY - 192.168.0.108"/>
+            <property name="hostAddress" value="192.168.0.108"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/API Chaining/Fake Authors Test Case" classname="Test Cases/API Chaining/Fake Authors Test Case" status="PASSED">
+            <system-out>2019-11-24 21:13:46 - [TEST_CASE][PASSED] - Test Cases/API Chaining/Fake Authors Test Case: Test Cases/API Chaining/Fake Authors Test Case&#xD;
+&#xD;
+2019-11-24 21:13:46 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully&#xD;
+&#xD;
+2019-11-24 21:13:46 - [TEST_STEP][PASSED] - println("Commencing Test Case Execution"): null&#xD;
+&#xD;
+2019-11-24 21:13:46 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully&#xD;
+&#xD;
+2019-11-24 21:13:46 - [TEST_STEP][PASSED] - authorsList = sendRequest(findTestObject("REST Example/Authors Requests/Get Authors Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:48 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\0.har&#xD;
+&#xD;
+2019-11-24 21:13:48 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - jsonResponse = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - authorsContent = jsonResponse.parseText(authorsList.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - extract_bookID = IDBook: null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - println(extract_bookID): null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - extract_authorID = ID: null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - extract_aFname = FirstName: null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - extract_aLname = LastName: null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - println(extract_authorID): null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - println(extract_aFname): null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - println(extract_aLname): null&#xD;
+&#xD;
+2019-11-24 21:13:48 - [TEST_STEP][PASSED] - booksList = sendRequest(findTestObject("REST Example/Authors Requests/Get Authors Books Request", ["book_id":extract_bookID])): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:49 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\1.har&#xD;
+&#xD;
+2019-11-24 21:13:49 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - booksContent = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - check_bookID = IDBook: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - println(check_bookID): null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - assert check_bookID == extract_bookID: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - postDetails = sendRequest(findTestObject("REST Example/Authors Requests/Post Authors Details Request", ["book_id":check_bookID, "author_id":extract_authorID, "first_name":extract_aFname, "last_name":extract_aLname])): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:49 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\2.har&#xD;
+&#xD;
+2019-11-24 21:13:49 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - postContents = jsonResponse.parseText(postDetails.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - extract_postedID = ID: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - extract_postedBookID = IDBook: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - extract_postedAFName = FirstName: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - extract_postedALName = LastName: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - println(extract_postedBookID): null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - println(extract_postedAFName): null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - println(extract_postedALName): null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - assert extract_postedID == extract_authorID: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - assert extract_postedAFName == extract_aFname: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - assert extract_postedALName == extract_aLname: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - authorID = extract_postedID: null&#xD;
+&#xD;
+2019-11-24 21:13:49 - [TEST_STEP][PASSED] - deleteStatus = sendRequest(findTestObject("REST Example/Authors Requests/Delete Author Details Request", ["author_id":authorID])): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\3.har&#xD;
+&#xD;
+2019-11-24 21:13:50 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(deleteStatus, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - updateDetails = sendRequest(findTestObject("REST Example/Authors Requests/Update Authors Details Request", ["author_id":extract_postedID, "book_id":extract_postedBookID, "updated_fName":extract_postedAFName, "updated_lName":extract_postedALName])): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\4.har&#xD;
+&#xD;
+2019-11-24 21:13:50 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - updatedContents = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - extract_updatedAuthorID = ID: null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - extract_updatedBookID = IDBook: null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - extract_updatedAuthorFName = FirstName: null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - extract_updatedAuthorLName = LastName: null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - println(extract_updatedAuthorID): null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - println(extract_updatedBookID): null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - println(extract_updatedAuthorFName): null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - println(extract_updatedAuthorLName): null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - assert extract_updatedAuthorID == extract_authorID: null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - assert extract_updatedBookID == extract_bookID: null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - assert extract_updatedAuthorFName == extract_aFname: null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - assert extract_updatedAuthorLName == extract_aLname: null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - Start tear down : tearDownTestCase: Method 'tearDownTestCase' complete successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - println("Finished Test Case Execution"): null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [MESSAGE][PASSED] - Method 'tearDownTestCase' complete successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/API Chaining/Fake Example Test Case" classname="Test Cases/API Chaining/Fake Example Test Case" status="PASSED">
+            <system-out>2019-11-24 21:13:50 - [TEST_CASE][PASSED] - Test Cases/API Chaining/Fake Example Test Case: Test Cases/API Chaining/Fake Example Test Case&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - println("Commencing Test Case Execution"): null&#xD;
+&#xD;
+2019-11-24 21:13:50 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully&#xD;
+&#xD;
+2019-11-24 21:13:50 - [TEST_STEP][PASSED] - listActivities = sendRequest(findTestObject("REST Example/Activities Requests/Get Activities")): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:51 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\5.har&#xD;
+&#xD;
+2019-11-24 21:13:51 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - jsonResponse = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - contentResponse = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - extract_ID = ID: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - extract_Boolean = Completed: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - println(extract_ID): null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - println(extract_Boolean): null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - singleActivity = sendRequest(findTestObject("REST Example/Activities Requests/Spcefic Activity", ["activity_ID":extract_ID])): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:51 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\6.har&#xD;
+&#xD;
+2019-11-24 21:13:51 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - singleResponse = jsonResponse.parseText(singleActivity.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - single_ID = ID: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - single_Boolean = Completed: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - assert extract_Boolean == single_Boolean: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - assert extract_ID == single_ID: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - updateActivity = sendRequest(findTestObject("REST Example/Activities Requests/Update Activity", ["activity_ID":single_ID, "activity_Title":"Updated Activity"])): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:51 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\7.har&#xD;
+&#xD;
+2019-11-24 21:13:51 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - updateResponse = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - updated_ID = ID: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - updated_Title = Title: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - ACTIVITY_ID = updated_ID: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - ACTIVITY_TITLE = updated_Title: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - assert ACTIVITY_ID == updated_ID: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - assert ACTIVITY_TITLE == updated_Title: null&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - deleteActivity = sendRequest(findTestObject("REST Example/Activities Requests/Delete Post", ["activity_ID":ACTIVITY_ID])): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:51 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\8.har&#xD;
+&#xD;
+2019-11-24 21:13:51 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:51 - [TEST_STEP][PASSED] - postActivity = sendRequest(findTestObject("REST Example/Activities Requests/Post Activity", ["activity_ID":single_ID, "activity_Title":"Created Title"])): Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:52 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\9.har&#xD;
+&#xD;
+2019-11-24 21:13:52 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - postResponse = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - created_ID = ID: null&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - creted_Title = Title: null&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - println(created_ID): null&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - println(creted_Title): null&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - assert created_ID == single_ID: null&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - assert creted_Title == "Created Title": null&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("REST Example/Activities Requests/Update Activity", ["activity_ID":23, "activity_Title":"Updated Activity"])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-11-24 21:13:52 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191124_211344\API Chaining\Fake REST API Service Test Suite\20191124_211344\requests\main\10.har&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-11-24 21:13:52 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-11-24 21:13:53 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-11-24 21:13:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "Title", "Updated Activity"): Verify element property value successfully&#xD;
+&#xD;
+2019-11-24 21:13:53 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-11-24 21:13:53 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-11-24 21:13:53 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-11-24 21:13:53 - [TEST_STEP][PASSED] - Start tear down : tearDownTestCase: Method 'tearDownTestCase' complete successfully&#xD;
+&#xD;
+2019-11-24 21:13:53 - [TEST_STEP][PASSED] - println("Finished Test Case Execution"): null&#xD;
+&#xD;
+2019-11-24 21:13:53 - [MESSAGE][PASSED] - Method 'tearDownTestCase' complete successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-11-24 21:13:45 - [TEST_SUITE][INCOMPLETE] - Fake REST API Service Test Suite: null</system-out>
+        <system-err>2019-11-24 21:13:45 - [TEST_SUITE][INCOMPLETE] - Fake REST API Service Test Suite: null</system-err>
+    </testsuite>
+</testsuites>

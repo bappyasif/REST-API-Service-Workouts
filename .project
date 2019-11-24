@@ -15,33 +15,6 @@
 		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>kat-2027268725567063414.groovy</name>
-			<type>1</type>
-			<location>C:/Users/BaPpY/AppData/Local/Temp/Katalon/Web Services/kat-2027268725567063414.groovy</location>
-		</link>
-		<link>
-			<name>kat-3637252490110446564.groovy</name>
-			<type>1</type>
-			<location>C:/Users/BaPpY/AppData/Local/Temp/Katalon/Web Services/kat-3637252490110446564.groovy</location>
-		</link>
-		<link>
-			<name>kat-4182967911811733461.groovy</name>
-			<type>1</type>
-			<location>C:/Users/BaPpY/AppData/Local/Temp/Katalon/Web Services/kat-4182967911811733461.groovy</location>
-		</link>
-		<link>
-			<name>kat-5834415403007953373.groovy</name>
-			<type>1</type>
-			<location>C:/Users/BaPpY/AppData/Local/Temp/Katalon/Web Services/kat-5834415403007953373.groovy</location>
-		</link>
-		<link>
-			<name>kat-623609670809668138.groovy</name>
-			<type>1</type>
-			<location>C:/Users/BaPpY/AppData/Local/Temp/Katalon/Web Services/kat-623609670809668138.groovy</location>
-		</link>
-	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1573915531360</id>

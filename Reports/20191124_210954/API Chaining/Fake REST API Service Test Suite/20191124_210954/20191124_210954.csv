@@ -1,0 +1,82 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Fake REST API Service Test Suite,,Fake REST API Service Test Suite For Multiple Kinds Of Requests.,,2019-11-24 21:09:56,2019-11-24 21:10:03,6.672s,INCOMPLETE
+,,,,,,,
+Test Cases/API Chaining/Fake Authors Test Case,,Fake Authors Rest API Chaining Requests Test Case,,2019-11-24 21:09:57,2019-11-24 21:10:00,3.724s,PASSED
+"authorsList = sendRequest(findTestObject(""REST Example/Authors Requests/Get Authors Details Request""))",,,,2019-11-24 21:09:57,2019-11-24 21:09:59,1.753s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.005s,PASSED
+authorsContent = jsonResponse.parseText(authorsList.getResponseBodyContent()),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.019s,PASSED
+extract_bookID = IDBook,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.017s,PASSED
+println(extract_bookID),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.005s,PASSED
+extract_authorID = ID,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+extract_aFname = FirstName,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+extract_aLname = LastName,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+println(extract_authorID),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.005s,PASSED
+println(extract_aFname),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+println(extract_aLname),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+"booksList = sendRequest(findTestObject(""REST Example/Authors Requests/Get Authors Books Request"", [""book_id"":extract_bookID]))",,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.326s,PASSED
+booksContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+check_bookID = IDBook,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+println(check_bookID),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+assert check_bookID == extract_bookID,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.010s,PASSED
+"postDetails = sendRequest(findTestObject(""REST Example/Authors Requests/Post Authors Details Request"", [""book_id"":check_bookID, ""author_id"":extract_authorID, ""first_name"":extract_aFname, ""last_name"":extract_aLname]))",,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.371s,PASSED
+postContents = jsonResponse.parseText(postDetails.getResponseBodyContent()),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+extract_postedID = ID,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+extract_postedBookID = IDBook,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+extract_postedAFName = FirstName,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+extract_postedALName = LastName,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+println(extract_postedBookID),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.000s,PASSED
+println(extract_postedAFName),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.001s,PASSED
+println(extract_postedALName),,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.001s,PASSED
+assert extract_postedID == extract_authorID,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.001s,PASSED
+assert extract_postedAFName == extract_aFname,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.001s,PASSED
+assert extract_postedALName == extract_aLname,,,,2019-11-24 21:09:59,2019-11-24 21:09:59,0.001s,PASSED
+authorID = extract_postedID,,,,2019-11-24 21:09:59,2019-11-24 21:10:00,0.143s,PASSED
+"deleteStatus = sendRequest(findTestObject(""REST Example/Authors Requests/Delete Author Details Request"", [""author_id"":authorID]))",,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.292s,PASSED
+"verifyResponseStatusCode(deleteStatus, 200)",,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.005s,PASSED
+"updateDetails = sendRequest(findTestObject(""REST Example/Authors Requests/Update Authors Details Request"", [""author_id"":extract_postedID, ""book_id"":extract_postedBookID, ""updated_fName"":extract_postedAFName, ""updated_lName"":extract_postedALName]))",,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.349s,PASSED
+updatedContents = jsonResponse.parseText(responseBodyContent),,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+extract_updatedAuthorID = ID,,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+extract_updatedBookID = IDBook,,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+extract_updatedAuthorFName = FirstName,,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+extract_updatedAuthorLName = LastName,,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+println(extract_updatedAuthorID),,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.011s,PASSED
+println(extract_updatedBookID),,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+println(extract_updatedAuthorFName),,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+println(extract_updatedAuthorLName),,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+assert extract_updatedAuthorID == extract_authorID,,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+assert extract_updatedBookID == extract_bookID,,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+assert extract_updatedAuthorFName == extract_aFname,,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+assert extract_updatedAuthorLName == extract_aLname,,,,2019-11-24 21:10:00,2019-11-24 21:10:00,0.000s,PASSED
+,,,,,,,
+Test Cases/API Chaining/Fake Example Test Case,,Fake REST API  Service Chaining Example Test Case,,2019-11-24 21:10:00,2019-11-24 21:10:03,2.689s,PASSED
+"listActivities = sendRequest(findTestObject(""REST Example/Activities Requests/Get Activities""))",,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.283s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.001s,PASSED
+contentResponse = jsonResponse.parseText(responseBodyContent),,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.002s,PASSED
+extract_ID = ID,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.004s,PASSED
+extract_Boolean = Completed,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+println(extract_ID),,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+println(extract_Boolean),,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+"singleActivity = sendRequest(findTestObject(""REST Example/Activities Requests/Spcefic Activity"", [""activity_ID"":extract_ID]))",,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.282s,PASSED
+singleResponse = jsonResponse.parseText(singleActivity.getResponseBodyContent()),,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.005s,PASSED
+single_ID = ID,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+single_Boolean = Completed,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+assert extract_Boolean == single_Boolean,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+assert extract_ID == single_ID,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+"updateActivity = sendRequest(findTestObject(""REST Example/Activities Requests/Update Activity"", [""activity_ID"":single_ID, ""activity_Title"":""Updated Activity""]))",,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.323s,PASSED
+updateResponse = jsonResponse.parseText(responseBodyContent),,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+updated_ID = ID,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.006s,PASSED
+updated_Title = Title,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+ACTIVITY_ID = updated_ID,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+ACTIVITY_TITLE = updated_Title,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+assert ACTIVITY_ID == updated_ID,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+assert ACTIVITY_TITLE == updated_Title,,,,2019-11-24 21:10:01,2019-11-24 21:10:01,0.000s,PASSED
+"deleteActivity = sendRequest(findTestObject(""REST Example/Activities Requests/Delete Post"", [""activity_ID"":ACTIVITY_ID]))",,,,2019-11-24 21:10:01,2019-11-24 21:10:02,0.286s,PASSED
+"postActivity = sendRequest(findTestObject(""REST Example/Activities Requests/Post Activity"", [""activity_ID"":single_ID, ""activity_Title"":""Created Title""]))",,,,2019-11-24 21:10:02,2019-11-24 21:10:02,0.328s,PASSED
+postResponse = jsonResponse.parseText(responseBodyContent),,,,2019-11-24 21:10:02,2019-11-24 21:10:02,0.000s,PASSED
+created_ID = ID,,,,2019-11-24 21:10:02,2019-11-24 21:10:02,0.000s,PASSED
+creted_Title = Title,,,,2019-11-24 21:10:02,2019-11-24 21:10:02,0.000s,PASSED
+println(created_ID),,,,2019-11-24 21:10:02,2019-11-24 21:10:02,0.000s,PASSED
+println(creted_Title),,,,2019-11-24 21:10:02,2019-11-24 21:10:02,0.000s,PASSED
+assert created_ID == single_ID,,,,2019-11-24 21:10:02,2019-11-24 21:10:02,0.000s,PASSED
+"assert creted_Title == ""Created Title""",,,,2019-11-24 21:10:02,2019-11-24 21:10:02,0.000s,PASSED
+"sendRequestAndVerify(findTestObject(""REST Example/Activities Requests/Update Activity"", [""activity_ID"":23, ""activity_Title"":""Updated Activity""]))",,,,2019-11-24 21:10:02,2019-11-24 21:10:03,0.889s,PASSED
