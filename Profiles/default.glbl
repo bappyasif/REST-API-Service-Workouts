@@ -19,4 +19,14 @@
       <initValue>9</initValue>
       <name>authorID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'fakerestapi.azurewebsites.net/'</initValue>
+      <name>boooksDetailsEndPoint</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'api/Books'</initValue>
+      <name>bookListEndPoint</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
