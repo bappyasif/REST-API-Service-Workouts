@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Multiple Sources Test Suite" time="11" tests="4" failures="0" errors="0">
+    <testsuite name="Multiple Sources Test Suite" tests="4" failures="0" errors="0" time="11" timestamp="2019-11-26 21:22:40" hostname="BaPpY - 192.168.0.108" id="Test Suites/Multiple DataSources/Multiple Sources Test Suite">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191126_212238\\Multiple DataSources\\Multiple Sources Test Suite\\20191126_212238"/>
+            <property name="logFiles" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191126_212238\\Multiple DataSources\\Multiple Sources Test Suite\\20191126_212238\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="BaPpY - 192.168.0.108"/>
+            <property name="hostAddress" value="192.168.0.108"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/Multiple DataSources/Books Details Test Case" classname="Test Cases/Multiple DataSources/Books Details Test Case" status="PASSED">
+            <system-out>2019-11-26 21:22:41 - [TEST_CASE][PASSED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - println(Book_ID): null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - println(Book_Title): null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - println(Book_Description): null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - println(Book_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - println(Book_Published): null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - dateFormat = calendarDate: null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - println(dateFormat): null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - Book_Published = dateFormat: null&#xD;
+&#xD;
+2019-11-26 21:22:41 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Get Books Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:44 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\0.har&#xD;
+&#xD;
+2019-11-26 21:22:44 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:44 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Get Books Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:44 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\1.har&#xD;
+&#xD;
+2019-11-26 21:22:44 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:44 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Post New Book Request", ["book_id":Book_ID, "book_title":Book_Title, "book_description":Book_Description, "book_excerpt":Book_Excerpt, "books_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:45 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\2.har&#xD;
+&#xD;
+2019-11-26 21:22:45 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:45 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Delete Specefic Book Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:45 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\3.har&#xD;
+&#xD;
+2019-11-26 21:22:45 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:45 - [TEST_STEP][PASSED] - println(Updated_Title): null&#xD;
+&#xD;
+2019-11-26 21:22:45 - [TEST_STEP][PASSED] - println(Updated_Description): null&#xD;
+&#xD;
+2019-11-26 21:22:45 - [TEST_STEP][PASSED] - println(Updated_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:22:45 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Update Specefic Book Request", ["book_id":Book_ID, "book_title":Updated_Title, "book_description":Updated_Description, "book_excerpt":Updated_Excerpt, "book_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:45 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\4.har&#xD;
+&#xD;
+2019-11-26 21:22:45 - [MESSAGE][PASSED] - Send request successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/Multiple DataSources/Books Details Test Case" classname="Test Cases/Multiple DataSources/Books Details Test Case" status="PASSED">
+            <system-out>2019-11-26 21:22:46 - [TEST_CASE][PASSED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - println(Book_ID): null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - println(Book_Title): null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - println(Book_Description): null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - println(Book_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - println(Book_Published): null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - dateFormat = calendarDate: null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - println(dateFormat): null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - Book_Published = dateFormat: null&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Get Books Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:46 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\5.har&#xD;
+&#xD;
+2019-11-26 21:22:46 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:46 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Get Books Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:47 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\6.har&#xD;
+&#xD;
+2019-11-26 21:22:47 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:47 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Post New Book Request", ["book_id":Book_ID, "book_title":Book_Title, "book_description":Book_Description, "book_excerpt":Book_Excerpt, "books_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:47 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\7.har&#xD;
+&#xD;
+2019-11-26 21:22:47 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:47 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Delete Specefic Book Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:47 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\8.har&#xD;
+&#xD;
+2019-11-26 21:22:47 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:47 - [TEST_STEP][PASSED] - println(Updated_Title): null&#xD;
+&#xD;
+2019-11-26 21:22:47 - [TEST_STEP][PASSED] - println(Updated_Description): null&#xD;
+&#xD;
+2019-11-26 21:22:47 - [TEST_STEP][PASSED] - println(Updated_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:22:47 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Update Specefic Book Request", ["book_id":Book_ID, "book_title":Updated_Title, "book_description":Updated_Description, "book_excerpt":Updated_Excerpt, "book_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:47 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\9.har&#xD;
+&#xD;
+2019-11-26 21:22:47 - [MESSAGE][PASSED] - Send request successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/Multiple DataSources/Books Details Test Case" classname="Test Cases/Multiple DataSources/Books Details Test Case" status="PASSED">
+            <system-out>2019-11-26 21:22:47 - [TEST_CASE][PASSED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - println(Book_ID): null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - println(Book_Title): null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - println(Book_Description): null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - println(Book_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - println(Book_Published): null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - dateFormat = calendarDate: null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - println(dateFormat): null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - Book_Published = dateFormat: null&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Get Books Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:48 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\10.har&#xD;
+&#xD;
+2019-11-26 21:22:48 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Get Books Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:48 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\11.har&#xD;
+&#xD;
+2019-11-26 21:22:48 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:48 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Post New Book Request", ["book_id":Book_ID, "book_title":Book_Title, "book_description":Book_Description, "book_excerpt":Book_Excerpt, "books_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:49 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\12.har&#xD;
+&#xD;
+2019-11-26 21:22:49 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Delete Specefic Book Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:49 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\13.har&#xD;
+&#xD;
+2019-11-26 21:22:49 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(Updated_Title): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(Updated_Description): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(Updated_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Update Specefic Book Request", ["book_id":Book_ID, "book_title":Updated_Title, "book_description":Updated_Description, "book_excerpt":Updated_Excerpt, "book_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:49 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\14.har&#xD;
+&#xD;
+2019-11-26 21:22:49 - [MESSAGE][PASSED] - Send request successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/Multiple DataSources/Books Details Test Case" classname="Test Cases/Multiple DataSources/Books Details Test Case" status="PASSED">
+            <system-out>2019-11-26 21:22:49 - [TEST_CASE][PASSED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(Book_ID): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(Book_Title): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(Book_Description): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(Book_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(Book_Published): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - dateFormat = calendarDate: null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - println(dateFormat): null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - Book_Published = dateFormat: null&#xD;
+&#xD;
+2019-11-26 21:22:49 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Get Books Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:50 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\15.har&#xD;
+&#xD;
+2019-11-26 21:22:50 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:50 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Get Books Details Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:51 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\16.har&#xD;
+&#xD;
+2019-11-26 21:22:51 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:51 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Post New Book Request", ["book_id":Book_ID, "book_title":Book_Title, "book_description":Book_Description, "book_excerpt":Book_Excerpt, "books_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:52 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\17.har&#xD;
+&#xD;
+2019-11-26 21:22:52 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:52 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Delete Specefic Book Request")): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:52 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\18.har&#xD;
+&#xD;
+2019-11-26 21:22:52 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:52 - [TEST_STEP][PASSED] - println(Updated_Title): null&#xD;
+&#xD;
+2019-11-26 21:22:52 - [TEST_STEP][PASSED] - println(Updated_Description): null&#xD;
+&#xD;
+2019-11-26 21:22:52 - [TEST_STEP][PASSED] - println(Updated_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:22:52 - [TEST_STEP][PASSED] - sendRequest(findTestObject("REST Example/Books Requests/Update Specefic Book Request", ["book_id":Book_ID, "book_title":Updated_Title, "book_description":Updated_Description, "book_excerpt":Updated_Excerpt, "book_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:22:52 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_212238\Multiple DataSources\Multiple Sources Test Suite\20191126_212238\requests\main\19.har&#xD;
+&#xD;
+2019-11-26 21:22:52 - [MESSAGE][PASSED] - Send request successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-11-26 21:22:40 - [TEST_SUITE][INCOMPLETE] - Multiple Sources Test Suite: null</system-out>
+        <system-err>2019-11-26 21:22:40 - [TEST_SUITE][INCOMPLETE] - Multiple Sources Test Suite: null</system-err>
+    </testsuite>
+</testsuites>

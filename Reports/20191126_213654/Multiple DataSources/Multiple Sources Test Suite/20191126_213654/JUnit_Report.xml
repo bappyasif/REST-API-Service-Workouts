@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Multiple Sources Test Suite" time="4" tests="0" failures="4" errors="0">
+    <testsuite name="Multiple Sources Test Suite" tests="0" failures="4" errors="0" time="4" timestamp="2019-11-26 21:36:56" hostname="BaPpY - 192.168.0.108" id="Test Suites/Multiple DataSources/Multiple Sources Test Suite">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191126_213654\\Multiple DataSources\\Multiple Sources Test Suite\\20191126_213654"/>
+            <property name="logFiles" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191126_213654\\Multiple DataSources\\Multiple Sources Test Suite\\20191126_213654\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="BaPpY - 192.168.0.108"/>
+            <property name="hostAddress" value="192.168.0.108"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/Multiple DataSources/Books Details Test Case" classname="Test Cases/Multiple DataSources/Books Details Test Case" status="FAILED">
+            <failure type="FAILED" message="Test Cases/Multiple DataSources/Books Details Test Case FAILED.&#xA;Reason:&#xA;Assertion failed: &#xA;&#xA;assert Book_ID == extract_BookID&#xA;       |       |  |&#xA;       11      |  11&#xA;               false&#xA;&#xD;&#xA;&#x9;at Books Details Test Case.run(Books Details Test Case:56)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-11-26 21:36:57 - [TEST_CASE][FAILED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert Book_ID == extract_BookID
+       |       |  |
+       11      |  11
+               false
+&#xD;
+	at Books Details Test Case.run(Books Details Test Case:56)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - println(Book_ID): null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - println(Book_Title): null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - println(Book_Description): null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - println(Book_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - println(Book_Published): null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - dateFormat = calendarDate: null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - println(dateFormat): null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - Book_Published = dateFormat: null&#xD;
+&#xD;
+2019-11-26 21:36:57 - [TEST_STEP][PASSED] - createdResponse = sendRequest(findTestObject("REST Example/Books Requests/Post New Book Request", ["book_id":Book_ID, "book_title":Book_Title, "book_description":Book_Description, "book_excerpt":Book_Excerpt, "books_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:36:59 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_213654\Multiple DataSources\Multiple Sources Test Suite\20191126_213654\requests\main\0.har&#xD;
+&#xD;
+2019-11-26 21:36:59 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - jsonResponse = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - createdContent = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookID = ID: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookTitle = Title: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookDescription = Description: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookExcerpt = Excerpt: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookPDate = PublishDate: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - assert Book_ID == extract_BookID: null</system-out>
+            <system-err>2019-11-26 21:36:57 - [TEST_CASE][FAILED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert Book_ID == extract_BookID
+       |       |  |
+       11      |  11
+               false
+&#xD;
+	at Books Details Test Case.run(Books Details Test Case:56)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)</system-err>
+        </testcase>
+        <testcase name="Test Cases/Multiple DataSources/Books Details Test Case" classname="Test Cases/Multiple DataSources/Books Details Test Case" status="FAILED">
+            <failure type="FAILED" message="Test Cases/Multiple DataSources/Books Details Test Case FAILED.&#xA;Reason:&#xA;Assertion failed: &#xA;&#xA;assert Book_ID == extract_BookID&#xA;       |       |  |&#xA;       12      |  12&#xA;               false&#xA;&#xD;&#xA;&#x9;at Books Details Test Case.run(Books Details Test Case:56)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-11-26 21:36:59 - [TEST_CASE][FAILED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert Book_ID == extract_BookID
+       |       |  |
+       12      |  12
+               false
+&#xD;
+	at Books Details Test Case.run(Books Details Test Case:56)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - println(Book_ID): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - println(Book_Title): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - println(Book_Description): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - println(Book_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - println(Book_Published): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - dateFormat = calendarDate: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - println(dateFormat): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - Book_Published = dateFormat: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - createdResponse = sendRequest(findTestObject("REST Example/Books Requests/Post New Book Request", ["book_id":Book_ID, "book_title":Book_Title, "book_description":Book_Description, "book_excerpt":Book_Excerpt, "books_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:36:59 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_213654\Multiple DataSources\Multiple Sources Test Suite\20191126_213654\requests\main\1.har&#xD;
+&#xD;
+2019-11-26 21:36:59 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - jsonResponse = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - createdContent = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookID = ID: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookTitle = Title: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookDescription = Description: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookExcerpt = Excerpt: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - extract_BookPDate = PublishDate: null&#xD;
+&#xD;
+2019-11-26 21:36:59 - [TEST_STEP][PASSED] - assert Book_ID == extract_BookID: null</system-out>
+            <system-err>2019-11-26 21:36:59 - [TEST_CASE][FAILED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert Book_ID == extract_BookID
+       |       |  |
+       12      |  12
+               false
+&#xD;
+	at Books Details Test Case.run(Books Details Test Case:56)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)</system-err>
+        </testcase>
+        <testcase name="Test Cases/Multiple DataSources/Books Details Test Case" classname="Test Cases/Multiple DataSources/Books Details Test Case" status="FAILED">
+            <failure type="FAILED" message="Test Cases/Multiple DataSources/Books Details Test Case FAILED.&#xA;Reason:&#xA;Assertion failed: &#xA;&#xA;assert Book_ID == extract_BookID&#xA;       |       |  |&#xA;       13      |  13&#xA;               false&#xA;&#xD;&#xA;&#x9;at Books Details Test Case.run(Books Details Test Case:56)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-11-26 21:37:00 - [TEST_CASE][FAILED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert Book_ID == extract_BookID
+       |       |  |
+       13      |  13
+               false
+&#xD;
+	at Books Details Test Case.run(Books Details Test Case:56)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_ID): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_Title): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_Description): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_Published): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - dateFormat = calendarDate: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(dateFormat): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - Book_Published = dateFormat: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - createdResponse = sendRequest(findTestObject("REST Example/Books Requests/Post New Book Request", ["book_id":Book_ID, "book_title":Book_Title, "book_description":Book_Description, "book_excerpt":Book_Excerpt, "books_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:37:00 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_213654\Multiple DataSources\Multiple Sources Test Suite\20191126_213654\requests\main\2.har&#xD;
+&#xD;
+2019-11-26 21:37:00 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - jsonResponse = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - createdContent = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookID = ID: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookTitle = Title: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookDescription = Description: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookExcerpt = Excerpt: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookPDate = PublishDate: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - assert Book_ID == extract_BookID: null</system-out>
+            <system-err>2019-11-26 21:37:00 - [TEST_CASE][FAILED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert Book_ID == extract_BookID
+       |       |  |
+       13      |  13
+               false
+&#xD;
+	at Books Details Test Case.run(Books Details Test Case:56)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)</system-err>
+        </testcase>
+        <testcase name="Test Cases/Multiple DataSources/Books Details Test Case" classname="Test Cases/Multiple DataSources/Books Details Test Case" status="FAILED">
+            <failure type="FAILED" message="Test Cases/Multiple DataSources/Books Details Test Case FAILED.&#xA;Reason:&#xA;Assertion failed: &#xA;&#xA;assert Book_ID == extract_BookID&#xA;       |       |  |&#xA;       14      |  14&#xA;               false&#xA;&#xD;&#xA;&#x9;at Books Details Test Case.run(Books Details Test Case:56)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-11-26 21:37:00 - [TEST_CASE][FAILED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert Book_ID == extract_BookID
+       |       |  |
+       14      |  14
+               false
+&#xD;
+	at Books Details Test Case.run(Books Details Test Case:56)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_ID): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_Title): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_Description): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_Excerpt): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(Book_Published): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - dateFormat = calendarDate: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - println(dateFormat): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - Book_Published = dateFormat: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - createdResponse = sendRequest(findTestObject("REST Example/Books Requests/Post New Book Request", ["book_id":Book_ID, "book_title":Book_Title, "book_description":Book_Description, "book_excerpt":Book_Excerpt, "books_published":Book_Published])): Send request successfully&#xD;
+&#xD;
+2019-11-26 21:37:00 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191126_213654\Multiple DataSources\Multiple Sources Test Suite\20191126_213654\requests\main\3.har&#xD;
+&#xD;
+2019-11-26 21:37:00 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - jsonResponse = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - createdContent = jsonResponse.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookID = ID: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookTitle = Title: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookDescription = Description: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookExcerpt = Excerpt: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - extract_BookPDate = PublishDate: null&#xD;
+&#xD;
+2019-11-26 21:37:00 - [TEST_STEP][PASSED] - assert Book_ID == extract_BookID: null</system-out>
+            <system-err>2019-11-26 21:37:00 - [TEST_CASE][FAILED] - Test Cases/Multiple DataSources/Books Details Test Case: Test Cases/Multiple DataSources/Books Details Test Case FAILED.
+Reason:
+Assertion failed: 
+
+assert Book_ID == extract_BookID
+       |       |  |
+       14      |  14
+               false
+&#xD;
+	at Books Details Test Case.run(Books Details Test Case:56)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1574782614824.run(TempTestSuite1574782614824.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-11-26 21:36:56 - [TEST_SUITE][INCOMPLETE] - Multiple Sources Test Suite: null</system-out>
+        <system-err>2019-11-26 21:36:56 - [TEST_SUITE][INCOMPLETE] - Multiple Sources Test Suite: null</system-err>
+    </testsuite>
+</testsuites>

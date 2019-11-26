@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description>Multiple Sources Test Suite</description>
+   <name>Multiple Sources Test Suite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>c22e162c-323d-4f42-9ea9-1a353b7af694</testSuiteGuid>
+   <testCaseLink>
+      <guid>9382896c-5e2e-4685-91e6-3c20d9ffc51a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Multiple DataSources/Books Details Test Case</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>948aa333-1b6d-4c6f-a731-81d4736f00d9</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Multiple Sources/Books Details Test Data</testDataId>
+      </testDataLink>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>26ddd7f6-c7b4-4d7e-9a39-98eae8f9f0c0</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Multiple Sources/Updated Details Test Data</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>948aa333-1b6d-4c6f-a731-81d4736f00d9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>BOOK_ID</value>
+         <variableId>06a1238e-eca1-4914-89cb-7b11739d3bf6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>948aa333-1b6d-4c6f-a731-81d4736f00d9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>BOOK_TITLE</value>
+         <variableId>ec2d5983-f80d-43d2-84cf-990356006344</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>948aa333-1b6d-4c6f-a731-81d4736f00d9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>BOOK_DESCRIPTION</value>
+         <variableId>528b18e2-9903-4e30-bb19-0097cd3d7128</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>948aa333-1b6d-4c6f-a731-81d4736f00d9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>BOOK_EXCERPT</value>
+         <variableId>f5daba3c-b1d3-4558-b16d-7ec00da1f8e6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>948aa333-1b6d-4c6f-a731-81d4736f00d9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>BOOK_PUBLISHED</value>
+         <variableId>f66a233c-7f6b-484d-92a5-5bc9e5608174</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>26ddd7f6-c7b4-4d7e-9a39-98eae8f9f0c0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UPDATED_TITLE</value>
+         <variableId>d5eac778-c370-4aa2-8800-d4e24cae5dee</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>26ddd7f6-c7b4-4d7e-9a39-98eae8f9f0c0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UPDATED_DESCRIPTION</value>
+         <variableId>106ffa76-f685-4735-95e5-d89c04351eec</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>26ddd7f6-c7b4-4d7e-9a39-98eae8f9f0c0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UPDATED_EXCERPT</value>
+         <variableId>7bd67ae6-9d64-4442-9fa0-75797b4a7a5b</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

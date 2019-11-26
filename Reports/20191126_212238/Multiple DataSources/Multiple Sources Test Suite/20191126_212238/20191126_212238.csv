@@ -1,0 +1,78 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Multiple Sources Test Suite,,Multiple Sources Test Suite,,2019-11-26 21:22:40,2019-11-26 21:22:52,11.993s,INCOMPLETE
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-26 21:22:41,2019-11-26 21:22:45,4.562s,PASSED
+println(Book_ID),,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.003s,PASSED
+println(Book_Title),,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.000s,PASSED
+println(Book_Description),,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.000s,PASSED
+println(Book_Published),,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.008s,PASSED
+date = new java.util.Date(),,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.003s,PASSED
+dateFormat = calendarDate,,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.000s,PASSED
+println(dateFormat),,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-26 21:22:41,2019-11-26 21:22:41,0.008s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Get Books Details Request""))",,,,2019-11-26 21:22:41,2019-11-26 21:22:44,2.444s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Get Books Details Request""))",,,,2019-11-26 21:22:44,2019-11-26 21:22:44,0.604s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-26 21:22:44,2019-11-26 21:22:45,0.340s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Delete Specefic Book Request""))",,,,2019-11-26 21:22:45,2019-11-26 21:22:45,0.314s,PASSED
+println(Updated_Title),,,,2019-11-26 21:22:45,2019-11-26 21:22:45,0.011s,PASSED
+println(Updated_Description),,,,2019-11-26 21:22:45,2019-11-26 21:22:45,0.005s,PASSED
+println(Updated_Excerpt),,,,2019-11-26 21:22:45,2019-11-26 21:22:45,0.004s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Update Specefic Book Request"", [""book_id"":Book_ID, ""book_title"":Updated_Title, ""book_description"":Updated_Description, ""book_excerpt"":Updated_Excerpt, ""book_published"":Book_Published]))",,,,2019-11-26 21:22:45,2019-11-26 21:22:45,0.331s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-26 21:22:46,2019-11-26 21:22:47,1.940s,PASSED
+println(Book_ID),,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.000s,PASSED
+println(Book_Title),,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.000s,PASSED
+println(Book_Description),,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.000s,PASSED
+println(Book_Published),,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.005s,PASSED
+date = new java.util.Date(),,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.000s,PASSED
+dateFormat = calendarDate,,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.000s,PASSED
+println(dateFormat),,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.005s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Get Books Details Request""))",,,,2019-11-26 21:22:46,2019-11-26 21:22:46,0.538s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Get Books Details Request""))",,,,2019-11-26 21:22:46,2019-11-26 21:22:47,0.500s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-26 21:22:47,2019-11-26 21:22:47,0.310s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Delete Specefic Book Request""))",,,,2019-11-26 21:22:47,2019-11-26 21:22:47,0.263s,PASSED
+println(Updated_Title),,,,2019-11-26 21:22:47,2019-11-26 21:22:47,0.000s,PASSED
+println(Updated_Description),,,,2019-11-26 21:22:47,2019-11-26 21:22:47,0.000s,PASSED
+println(Updated_Excerpt),,,,2019-11-26 21:22:47,2019-11-26 21:22:47,0.000s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Update Specefic Book Request"", [""book_id"":Book_ID, ""book_title"":Updated_Title, ""book_description"":Updated_Description, ""book_excerpt"":Updated_Excerpt, ""book_published"":Book_Published]))",,,,2019-11-26 21:22:47,2019-11-26 21:22:47,0.300s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-26 21:22:47,2019-11-26 21:22:49,1.629s,PASSED
+println(Book_ID),,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.000s,PASSED
+println(Book_Title),,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.000s,PASSED
+println(Book_Description),,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.000s,PASSED
+println(Book_Published),,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.000s,PASSED
+date = new java.util.Date(),,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.006s,PASSED
+dateFormat = calendarDate,,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.000s,PASSED
+println(dateFormat),,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.000s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Get Books Details Request""))",,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.285s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Get Books Details Request""))",,,,2019-11-26 21:22:48,2019-11-26 21:22:48,0.516s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-26 21:22:48,2019-11-26 21:22:49,0.276s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Delete Specefic Book Request""))",,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.266s,PASSED
+println(Updated_Title),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.001s,PASSED
+println(Updated_Description),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+println(Updated_Excerpt),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.001s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Update Specefic Book Request"", [""book_id"":Book_ID, ""book_title"":Updated_Title, ""book_description"":Updated_Description, ""book_excerpt"":Updated_Excerpt, ""book_published"":Book_Published]))",,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.264s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-26 21:22:49,2019-11-26 21:22:52,3.251s,PASSED
+println(Book_ID),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+println(Book_Title),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+println(Book_Description),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+println(Book_Published),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+date = new java.util.Date(),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+dateFormat = calendarDate,,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.010s,PASSED
+println(dateFormat),,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-26 21:22:49,2019-11-26 21:22:49,0.000s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Get Books Details Request""))",,,,2019-11-26 21:22:49,2019-11-26 21:22:50,1.281s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Get Books Details Request""))",,,,2019-11-26 21:22:50,2019-11-26 21:22:51,0.974s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-26 21:22:51,2019-11-26 21:22:52,0.359s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Delete Specefic Book Request""))",,,,2019-11-26 21:22:52,2019-11-26 21:22:52,0.290s,PASSED
+println(Updated_Title),,,,2019-11-26 21:22:52,2019-11-26 21:22:52,0.000s,PASSED
+println(Updated_Description),,,,2019-11-26 21:22:52,2019-11-26 21:22:52,0.000s,PASSED
+println(Updated_Excerpt),,,,2019-11-26 21:22:52,2019-11-26 21:22:52,0.000s,PASSED
+"sendRequest(findTestObject(""REST Example/Books Requests/Update Specefic Book Request"", [""book_id"":Book_ID, ""book_title"":Updated_Title, ""book_description"":Updated_Description, ""book_excerpt"":Updated_Excerpt, ""book_published"":Book_Published]))",,,,2019-11-26 21:22:52,2019-11-26 21:22:52,0.321s,PASSED

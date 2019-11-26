@@ -5,4 +5,60 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>783787d3-0540-4140-9b03-0f4501d4dce8</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>06a1238e-eca1-4914-89cb-7b11739d3bf6</id>
+      <masked>false</masked>
+      <name>Book_ID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ec2d5983-f80d-43d2-84cf-990356006344</id>
+      <masked>false</masked>
+      <name>Book_Title</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>528b18e2-9903-4e30-bb19-0097cd3d7128</id>
+      <masked>false</masked>
+      <name>Book_Description</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f5daba3c-b1d3-4558-b16d-7ec00da1f8e6</id>
+      <masked>false</masked>
+      <name>Book_Excerpt</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f66a233c-7f6b-484d-92a5-5bc9e5608174</id>
+      <masked>false</masked>
+      <name>Book_Published</name>
+   </variable>
+   <variable>
+      <defaultValue>'Updated Title'</defaultValue>
+      <description></description>
+      <id>d5eac778-c370-4aa2-8800-d4e24cae5dee</id>
+      <masked>false</masked>
+      <name>Updated_Title</name>
+   </variable>
+   <variable>
+      <defaultValue>'Updated Book Description text. Updated Book Description text. Updated Book Description text. Updated Book Description text. Updated Book Description text. Updated Book Description text. Updated Book Description text. Updated Book Description text. Updated Book Description text. '</defaultValue>
+      <description></description>
+      <id>106ffa76-f685-4735-95e5-d89c04351eec</id>
+      <masked>false</masked>
+      <name>Updated_Description</name>
+   </variable>
+   <variable>
+      <defaultValue>'Updated Book Excerpt text. Updated Book Excerpt text. Updated Book Excerpt text. Updated Book Excerpt text. '</defaultValue>
+      <description></description>
+      <id>7bd67ae6-9d64-4442-9fa0-75797b4a7a5b</id>
+      <masked>false</masked>
+      <name>Updated_Excerpt</name>
+   </variable>
 </TestCaseEntity>
