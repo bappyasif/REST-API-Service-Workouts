@@ -16,12 +16,19 @@
    <httpBodyType>text</httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>http://fakerestapi.azurewebsites.net/api/Books/1</restUrl>
+   <restUrl>http://fakerestapi.azurewebsites.net/api/Books/${book_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>927439e7-31fd-4dd0-87d7-df5d93122a39</id>
+      <masked>false</masked>
+      <name>book_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

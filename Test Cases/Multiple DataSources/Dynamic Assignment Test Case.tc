@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Dynamic Assignment Test Case</description>
+   <name>Dynamic Assignment Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aec9b7e1-b16d-4b30-8c2e-4e3e3cdbcda7</testCaseGuid>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>96802a21-c534-4694-a61e-3b4d0cc5e90c</id>
+      <masked>false</masked>
+      <name>BOOK_ID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Multiple Sources/Books Details Test Data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>0098e5a7-f7ef-41dc-a75d-055336b7041e</id>
+      <masked>false</masked>
+      <name>Book_ID</name>
+   </variable>
+</TestCaseEntity>

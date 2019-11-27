@@ -1,0 +1,82 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Multiple Sources Test Suite,,Multiple Sources Test Suite,,2019-11-27 19:51:58,2019-11-27 19:52:03,4.462s,INCOMPLETE
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-27 19:51:59,2019-11-27 19:52:01,2.533s,FAILED
+println(Book_ID),,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.006s,PASSED
+println(Book_Title),,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.002s,PASSED
+println(Book_Description),,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.000s,PASSED
+println(Book_Published),,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.000s,PASSED
+date = new java.util.Date(),,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.010s,PASSED
+dateFormat = calendarDate,,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.000s,PASSED
+println(dateFormat),,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-27 19:51:59,2019-11-27 19:51:59,0.008s,PASSED
+"createdResponse = sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-27 19:51:59,2019-11-27 19:52:01,1.670s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.006s,PASSED
+createdContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.026s,PASSED
+extract_BookID = ID,,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.015s,PASSED
+extract_BookTitle = Title,,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+extract_BookDescription = Description,,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+extract_BookExcerpt = Excerpt,,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+extract_BookPDate = PublishDate,,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+assert Book_ID == extract_BookID,,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.019s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-27 19:52:01,2019-11-27 19:52:02,0.426s,FAILED
+println(Book_ID),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+println(Book_Title),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+println(Book_Description),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+println(Book_Published),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+date = new java.util.Date(),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+dateFormat = calendarDate,,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+println(dateFormat),,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-27 19:52:01,2019-11-27 19:52:01,0.000s,PASSED
+"createdResponse = sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-27 19:52:01,2019-11-27 19:52:02,0.389s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+createdContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+extract_BookID = ID,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.008s,PASSED
+extract_BookTitle = Title,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+extract_BookDescription = Description,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.003s,PASSED
+extract_BookExcerpt = Excerpt,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.001s,PASSED
+extract_BookPDate = PublishDate,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+assert Book_ID == extract_BookID,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.428s,FAILED
+println(Book_ID),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(Book_Title),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(Book_Description),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(Book_Published),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.002s,PASSED
+date = new java.util.Date(),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+dateFormat = calendarDate,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(dateFormat),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+"createdResponse = sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.378s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.001s,PASSED
+createdContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.001s,PASSED
+extract_BookID = ID,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.001s,PASSED
+extract_BookTitle = Title,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.001s,PASSED
+extract_BookDescription = Description,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+extract_BookExcerpt = Excerpt,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.001s,PASSED
+extract_BookPDate = PublishDate,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.001s,PASSED
+assert Book_ID == extract_BookID,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-27 19:52:02,2019-11-27 19:52:03,0.369s,FAILED
+println(Book_ID),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(Book_Title),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(Book_Description),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(Book_Published),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+date = new java.util.Date(),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+dateFormat = calendarDate,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+println(dateFormat),,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.008s,PASSED
+Book_Published = dateFormat,,,,2019-11-27 19:52:02,2019-11-27 19:52:02,0.000s,PASSED
+"createdResponse = sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-27 19:52:02,2019-11-27 19:52:03,0.339s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-27 19:52:03,2019-11-27 19:52:03,0.000s,PASSED
+createdContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-27 19:52:03,2019-11-27 19:52:03,0.001s,PASSED
+extract_BookID = ID,,,,2019-11-27 19:52:03,2019-11-27 19:52:03,0.000s,PASSED
+extract_BookTitle = Title,,,,2019-11-27 19:52:03,2019-11-27 19:52:03,0.001s,PASSED
+extract_BookDescription = Description,,,,2019-11-27 19:52:03,2019-11-27 19:52:03,0.000s,PASSED
+extract_BookExcerpt = Excerpt,,,,2019-11-27 19:52:03,2019-11-27 19:52:03,0.001s,PASSED
+extract_BookPDate = PublishDate,,,,2019-11-27 19:52:03,2019-11-27 19:52:03,0.000s,PASSED
+assert Book_ID == extract_BookID,,,,2019-11-27 19:52:03,2019-11-27 19:52:03,0.001s,PASSED
