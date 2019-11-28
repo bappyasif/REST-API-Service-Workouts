@@ -5,6 +5,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
@@ -35,6 +36,7 @@ import com.kms.katalon.core.annotation.TearDownTestCase
 def setUp() {
 	// Put your code here.
 	println ("Gearing Up")
+	//println TestCaseContext.getTestCaseID();
 }
 
 /**

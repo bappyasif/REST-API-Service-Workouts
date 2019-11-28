@@ -38,6 +38,11 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+
+assertThat(response.getStatusCode()).isIn(Arrays.asList(200, 201, 202))
+
+WS.verifyElementPropertyValue(response, 'PageCount', 200)
+
+//assertThat(response.getResponseText()).contains('Katalon Test Project')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

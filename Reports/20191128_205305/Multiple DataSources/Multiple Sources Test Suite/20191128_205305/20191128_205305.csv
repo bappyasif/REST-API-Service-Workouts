@@ -1,0 +1,142 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Multiple Sources Test Suite,,Multiple Sources Test Suite,,2019-11-28 20:53:08,2019-11-28 20:53:15,6.460s,INCOMPLETE
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-28 20:53:09,2019-11-28 20:53:12,3.552s,PASSED
+Start listener action : sampleBeforeTestCase,,,,2019-11-28 20:53:09,2019-11-28 20:53:09,0.013s,PASSED
+println(Book_ID),,,,2019-11-28 20:53:09,2019-11-28 20:53:09,0.009s,PASSED
+println(Book_Title),,,,2019-11-28 20:53:09,2019-11-28 20:53:09,0.001s,PASSED
+println(Book_Description),,,,2019-11-28 20:53:10,2019-11-28 20:53:10,0.004s,PASSED
+println(Book_Excerpt),,,,2019-11-28 20:53:10,2019-11-28 20:53:10,0.004s,PASSED
+println(Book_Published),,,,2019-11-28 20:53:10,2019-11-28 20:53:10,0.010s,PASSED
+date = new java.util.Date(),,,,2019-11-28 20:53:10,2019-11-28 20:53:10,0.009s,PASSED
+dateFormat = calendarDate,,,,2019-11-28 20:53:10,2019-11-28 20:53:10,0.000s,PASSED
+println(dateFormat),,,,2019-11-28 20:53:10,2019-11-28 20:53:10,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-28 20:53:10,2019-11-28 20:53:10,0.000s,PASSED
+"createdResponse = sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-28 20:53:10,2019-11-28 20:53:12,2.502s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.036s,PASSED
+createdContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.011s,PASSED
+extract_BookID = ID,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.016s,PASSED
+extract_BookTitle = Title,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+extract_BookDescription = Description,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.003s,PASSED
+extract_BookExcerpt = Excerpt,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+extract_BookPDate = PublishDate,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+assert Book_Title == extract_BookTitle,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+assert Book_Description == extract_BookDescription,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+assert Book_Excerpt == extract_BookExcerpt,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+println(Updated_Title),,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+println(Updated_Description),,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+println(Updated_Excerpt),,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""REST Example/Books Requests/Update Specefic Book Request"", [""book_id"":Book_ID, ""book_title"":Updated_Title, ""book_description"":Updated_Description, ""book_excerpt"":Updated_Excerpt, ""book_published"":Book_Published]))",,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.350s,PASSED
+updatedContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+extract_updatedTitle = Title,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+extract_updatedDescription = Description,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+extract_updatedExcerpt = Excerpt,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+assert Updated_Title == extract_updatedTitle,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.006s,PASSED
+assert Updated_Description == extract_updatedDescription,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.001s,PASSED
+assert Updated_Excerpt == extract_updatedExcerpt,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-11-28 20:53:12,2019-11-28 20:53:12,0.000s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.749s,PASSED
+Start listener action : sampleBeforeTestCase,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+println(Book_ID),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.011s,PASSED
+println(Book_Title),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+println(Book_Description),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.006s,PASSED
+println(Book_Published),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+date = new java.util.Date(),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+dateFormat = calendarDate,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+println(dateFormat),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+"createdResponse = sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.369s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+createdContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+extract_BookID = ID,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+extract_BookTitle = Title,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+extract_BookDescription = Description,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+extract_BookExcerpt = Excerpt,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+extract_BookPDate = PublishDate,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+assert Book_Title == extract_BookTitle,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+assert Book_Description == extract_BookDescription,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+assert Book_Excerpt == extract_BookExcerpt,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+println(Updated_Title),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+println(Updated_Description),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+println(Updated_Excerpt),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""REST Example/Books Requests/Update Specefic Book Request"", [""book_id"":Book_ID, ""book_title"":Updated_Title, ""book_description"":Updated_Description, ""book_excerpt"":Updated_Excerpt, ""book_published"":Book_Published]))",,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.330s,PASSED
+updatedContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+extract_updatedTitle = Title,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+extract_updatedDescription = Description,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+extract_updatedExcerpt = Excerpt,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+assert Updated_Title == extract_updatedTitle,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+assert Updated_Description == extract_updatedDescription,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+assert Updated_Excerpt == extract_updatedExcerpt,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-28 20:53:13,2019-11-28 20:53:14,0.692s,PASSED
+Start listener action : sampleBeforeTestCase,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.002s,PASSED
+println(Book_ID),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+println(Book_Title),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+println(Book_Description),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+println(Book_Excerpt),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+println(Book_Published),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+date = new java.util.Date(),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.000s,PASSED
+dateFormat = calendarDate,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+println(dateFormat),,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+Book_Published = dateFormat,,,,2019-11-28 20:53:13,2019-11-28 20:53:13,0.001s,PASSED
+"createdResponse = sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-28 20:53:13,2019-11-28 20:53:14,0.326s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+createdContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookID = ID,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookTitle = Title,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookDescription = Description,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookExcerpt = Excerpt,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookPDate = PublishDate,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+assert Book_Title == extract_BookTitle,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+assert Book_Description == extract_BookDescription,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+assert Book_Excerpt == extract_BookExcerpt,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(Updated_Title),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(Updated_Description),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(Updated_Excerpt),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""REST Example/Books Requests/Update Specefic Book Request"", [""book_id"":Book_ID, ""book_title"":Updated_Title, ""book_description"":Updated_Description, ""book_excerpt"":Updated_Excerpt, ""book_published"":Book_Published]))",,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.333s,PASSED
+updatedContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_updatedTitle = Title,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.001s,PASSED
+extract_updatedDescription = Description,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_updatedExcerpt = Excerpt,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+assert Updated_Title == extract_updatedTitle,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.001s,PASSED
+assert Updated_Description == extract_updatedDescription,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+assert Updated_Excerpt == extract_updatedExcerpt,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.001s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.001s,PASSED
+,,,,,,,
+Test Cases/Multiple DataSources/Books Details Test Case,,Books Details Test Case,,2019-11-28 20:53:14,2019-11-28 20:53:15,0.681s,PASSED
+Start listener action : sampleBeforeTestCase,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.002s,PASSED
+println(Book_ID),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.001s,PASSED
+println(Book_Title),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.001s,PASSED
+println(Book_Description),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(Book_Excerpt),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(Book_Published),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+date = new java.util.Date(),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+dateFormat = calendarDate,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(dateFormat),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+Book_Published = dateFormat,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+"createdResponse = sendRequest(findTestObject(""REST Example/Books Requests/Post New Book Request"", [""book_id"":Book_ID, ""book_title"":Book_Title, ""book_description"":Book_Description, ""book_excerpt"":Book_Excerpt, ""books_published"":Book_Published]))",,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.311s,PASSED
+jsonResponse = new groovy.json.JsonSlurper(),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.002s,PASSED
+createdContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookID = ID,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookTitle = Title,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookDescription = Description,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookExcerpt = Excerpt,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+extract_BookPDate = PublishDate,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+assert Book_Title == extract_BookTitle,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+assert Book_Description == extract_BookDescription,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+assert Book_Excerpt == extract_BookExcerpt,,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(Updated_Title),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(Updated_Description),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+println(Updated_Excerpt),,,,2019-11-28 20:53:14,2019-11-28 20:53:14,0.000s,PASSED
+"updatedResponse = sendRequest(findTestObject(""REST Example/Books Requests/Update Specefic Book Request"", [""book_id"":Book_ID, ""book_title"":Updated_Title, ""book_description"":Updated_Description, ""book_excerpt"":Updated_Excerpt, ""book_published"":Book_Published]))",,,,2019-11-28 20:53:14,2019-11-28 20:53:15,0.333s,PASSED
+updatedContent = jsonResponse.parseText(responseBodyContent),,,,2019-11-28 20:53:15,2019-11-28 20:53:15,0.000s,PASSED
+extract_updatedTitle = Title,,,,2019-11-28 20:53:15,2019-11-28 20:53:15,0.000s,PASSED
+extract_updatedDescription = Description,,,,2019-11-28 20:53:15,2019-11-28 20:53:15,0.000s,PASSED
+extract_updatedExcerpt = Excerpt,,,,2019-11-28 20:53:15,2019-11-28 20:53:15,0.000s,PASSED
+assert Updated_Title == extract_updatedTitle,,,,2019-11-28 20:53:15,2019-11-28 20:53:15,0.000s,PASSED
+assert Updated_Description == extract_updatedDescription,,,,2019-11-28 20:53:15,2019-11-28 20:53:15,0.000s,PASSED
+assert Updated_Excerpt == extract_updatedExcerpt,,,,2019-11-28 20:53:15,2019-11-28 20:53:15,0.000s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-11-28 20:53:15,2019-11-28 20:53:15,0.000s,PASSED
