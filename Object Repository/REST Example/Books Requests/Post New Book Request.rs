@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;ID\&quot;: \&quot;${book_id}\&quot;,\n  \&quot;Title\&quot;: \&quot;${book_title}\&quot;,\n  \&quot;Description\&quot;: \&quot;${book_description}\&quot;,\n  \&quot;PageCount\&quot;: 0,\n  \&quot;Excerpt\&quot;: \&quot;${book_excerpt}\&quot;,\n  \&quot;PublishDate\&quot;: \&quot;2019-11-25T14:02:37.311Z\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;ID\&quot;: \&quot;${book_id}\&quot;,\n  \&quot;Title\&quot;: \&quot;${book_title}\&quot;,\n  \&quot;Description\&quot;: \&quot;${book_description}\&quot;,\n  \&quot;PageCount\&quot;: 0,\n  \&quot;Excerpt\&quot;: \&quot;${book_excerpt}\&quot;,\n  \&quot;PublishDate\&quot;: \&quot;${books_published}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -58,7 +58,7 @@
       <name>book_excerpt</name>
    </variables>
    <variables>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'2019-11-25T14:02:37.311Z'</defaultValue>
       <description></description>
       <id>20a19bfd-d4f7-43d9-b9bd-3f208a7da96f</id>
       <masked>false</masked>
