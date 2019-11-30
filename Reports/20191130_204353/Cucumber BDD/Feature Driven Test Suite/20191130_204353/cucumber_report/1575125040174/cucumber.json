@@ -1,0 +1,206 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 31,
+        "name": "Post A New Book Object",
+        "description": "",
+        "id": "rest-api-requests-example;post-a-new-book-object;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 579045,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "011 And Feature Title Book Obeject Properties Are Available For Example",
+            "match": {
+              "arguments": [
+                {
+                  "val": "011",
+                  "offset": 0
+                },
+                {
+                  "val": "Feature Title",
+                  "offset": 8
+                }
+              ],
+              "location": "CreatingNewPostRequest.checkingBookIDAndTitle(int,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2243083970,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "All Object Properties Are 011 Feature Title Feature Description Sample Text Feature Excerpt Demo Text 2019-11-25T14:02:37.311Z Ready To Use For Making This POST API Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "011",
+                  "offset": 26
+                },
+                {
+                  "val": "Feature Title Feature Description Sample Text Feature Excerpt",
+                  "offset": 30
+                },
+                {
+                  "val": "Demo",
+                  "offset": 92
+                },
+                {
+                  "val": "Text",
+                  "offset": 97
+                },
+                {
+                  "val": "2019-11-25T14:02:37.311Z",
+                  "offset": 102
+                }
+              ],
+              "location": "CreatingNewPostRequest.makingAPIRequestReady(int,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 744547,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I Verify REST API Post Request Status Code \u003cCode\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cCode\u003e",
+                  "offset": 43
+                }
+              ],
+              "location": "CreatingNewPostRequest.verifyingCode(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Post A New Book Object",
+        "description": "",
+        "id": "rest-api-requests-example;post-a-new-book-object;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 832644,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "012 And Another Title Book Obeject Properties Are Available For Example",
+            "match": {
+              "arguments": [
+                {
+                  "val": "012",
+                  "offset": 0
+                },
+                {
+                  "val": "Another Title",
+                  "offset": 8
+                }
+              ],
+              "location": "CreatingNewPostRequest.checkingBookIDAndTitle(int,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 359977779,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "All Object Properties Are 012 Another Title Another Description Sample Text Another Excerpt Demo Text 2019-11-29T14:02:39.311Z Ready To Use For Making This POST API Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "012",
+                  "offset": 26
+                },
+                {
+                  "val": "Another Title Another Description Sample Text Another Excerpt",
+                  "offset": 30
+                },
+                {
+                  "val": "Demo",
+                  "offset": 92
+                },
+                {
+                  "val": "Text",
+                  "offset": 97
+                },
+                {
+                  "val": "2019-11-29T14:02:39.311Z",
+                  "offset": 102
+                }
+              ],
+              "location": "CreatingNewPostRequest.makingAPIRequestReady(int,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 552958,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I Verify REST API Post Request Status Code \u003cCode\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cCode\u003e",
+                  "offset": 43
+                }
+              ],
+              "location": "CreatingNewPostRequest.verifyingCode(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "REST API Requests Example",
+    "description": "  I want to use this template for my feature file",
+    "id": "rest-api-requests-example",
+    "keyword": "Feature",
+    "uri": "G:/Katalon Studio/Katalon Workspace/REST API Service Workouts/Include/features/BDD.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

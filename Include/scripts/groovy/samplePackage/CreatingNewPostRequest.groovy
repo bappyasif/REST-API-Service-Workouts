@@ -7,6 +7,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
+import com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
@@ -82,11 +83,42 @@ class CreatingNewPostRequest {
 		
 		String statusCode = responseStatus.getStatusCode()
 		
+		// Was Trying Custom Keywords. Checkout verifyingCode Function For Demonstration.
+		//TestObject testObject = new TestObject()
+		//RequestObject requestObject = (RequestObject)testObject
+		//responseStatus = WSBuiltInKeywords.sendRequest(requestObject)
+		
+		def customKeyword =  new SampleCustomKeywordsExample()
+		customKeyword.successfulRequestStatusCode(findTestObject('REST Example/Books Requests/Get Specefic Book Request', [('book_id') : value]))
+		
 		verifyingCode(statusCode)
 	}
 
 	@Then("I Verify REST API Post Request Status Code (.*)")
 	def verifyingCode(String status) {
+		
 		println status
+		
+		//CustomKeywordDelegatingMetaClass.
+		//CustomKeywords.'samplePackage.SampleCustomKeywordsExample.successfulRequestStatusCode'(response)
+		
+//		TestObject request
+//		RequestObject requestObject = (RequestObject) request
+//		ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
+//		
+//		def paramTypes = new SampleCustomKeywordsExample(response)
+//		paramTypes.successfulRequestStatusCode() 
+		
+		
+		// Success Code Extraction For Specific Book Request Object
+		def customKeyword =  new SampleCustomKeywordsExample()
+//		ResponseObject responseStatus =  customKeyword.successfulRequestStatusCode(findTestObject('REST Example/Books Requests/Get Specefic Book Request', [('book_id') : 2]))
+//		//println responseStatus.getStatusCode()
+//		println responseStatus
+		ResponseObject responseStatus =  customKeyword.verifyStatusCode(findTestObject('REST Example/Books Requests/Get Specefic Book Request', [('book_id') : 2]), 200)
+		//println responseStatus.getStatusCode()
+//		String codeReturned = responseStatus.getStatusCode()
+//		println ("Code Retyurned : "+codeReturned)
 	}
+
 }

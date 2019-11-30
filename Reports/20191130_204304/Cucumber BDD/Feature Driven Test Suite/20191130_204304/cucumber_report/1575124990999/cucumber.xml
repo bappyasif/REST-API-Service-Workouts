@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.84814">
+<testcase classname="REST API Requests Example" name="Post A New Book Object" time="0.478559">
+<system-out><![CDATA[Given 011 And Feature Title Book Obeject Properties Are Available For Example.passed
+When All Object Properties Are 011 Feature Title Feature Description Sample Text Feature Excerpt Demo Text 2019-11-25T14:02:37.311Z Ready To Use For Making This POST API Request.passed
+Then I Verify REST API Post Request Status Code <Code>......................passed
+]]></system-out>
+</testcase>
+<testcase classname="REST API Requests Example" name="Post A New Book Object 2" time="0.369581">
+<system-out><![CDATA[Given 012 And Another Title Book Obeject Properties Are Available For Example.passed
+When All Object Properties Are 012 Another Title Another Description Sample Text Another Excerpt Demo Text 2019-11-29T14:02:39.311Z Ready To Use For Making This POST API Request.passed
+Then I Verify REST API Post Request Status Code <Code>......................passed
+]]></system-out>
+</testcase>
+</testsuite>

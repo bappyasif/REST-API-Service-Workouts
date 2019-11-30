@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Feature Driven Test Suite" time="8" tests="0" failures="0" errors="0">
+    <testsuite name="Feature Driven Test Suite" tests="0" failures="0" errors="0" time="8" timestamp="2019-11-30 20:43:55" hostname="BaPpY - 192.168.0.108" id="Test Suites/Cucumber BDD/Feature Driven Test Suite">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191130_204353\\Cucumber BDD\\Feature Driven Test Suite\\20191130_204353"/>
+            <property name="logFiles" value="G:\\Katalon Studio\\Katalon Workspace\\REST API Service Workouts\\Reports\\20191130_204353\\Cucumber BDD\\Feature Driven Test Suite\\20191130_204353\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="BaPpY - 192.168.0.108"/>
+            <property name="hostAddress" value="192.168.0.108"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/Cucumber BDD/Feature Driven Test Case" classname="Test Cases/Cucumber BDD/Feature Driven Test Case" status="INCOMPLETE">
+            <system-out>2019-11-30 20:43:56 - [TEST_CASE][INCOMPLETE] - Test Cases/Cucumber BDD/Feature Driven Test Case: null&#xD;
+&#xD;
+2019-11-30 20:43:56 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null&#xD;
+&#xD;
+2019-11-30 20:43:56 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-11-30 20:43:56 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null&#xD;
+&#xD;
+2019-11-30 20:43:56 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/BDD.feature"): null&#xD;
+&#xD;
+2019-11-30 20:43:56 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/BDD.feature' and extract report to folder: 'G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191130_204353\Cucumber BDD\Feature Driven Test Suite\20191130_204353/cucumber_report/1575125036682'...&#xD;
+&#xD;
+2019-11-30 20:43:57 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Post A New Book Object: SCENARIO Post A New Book Object&#xD;
+&#xD;
+2019-11-30 20:43:57 - [TEST_STEP][PASSED] - 011 And Feature Title Book Obeject Properties Are Available For Example: 011 And Feature Title Book Obeject Properties Are Available For Example&#xD;
+&#xD;
+2019-11-30 20:43:57 - [MESSAGE][PASSED] - 011 And Feature Title Book Obeject Properties Are Available For Example&#xD;
+&#xD;
+2019-11-30 20:43:57 - [TEST_STEP][PASSED] - All Object Properties Are 011 Feature Title Feature Description Sample Text Feature Excerpt Demo Text 2019-11-25T14:02:37.311Z Ready To Use For Making This POST API Request: All Object Properties Are 011 Feature Title Feature Description Sample Text Feature Excerpt Demo Text 2019-11-25T14:02:37.311Z Ready To Use For Making This POST API Request&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191130_204353\Cucumber BDD\Feature Driven Test Suite\20191130_204353\requests\main\0.har&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][PASSED] - All Object Properties Are 011 Feature Title Feature Description Sample Text Feature Excerpt Demo Text 2019-11-25T14:02:37.311Z Ready To Use For Making This POST API Request&#xD;
+&#xD;
+2019-11-30 20:43:59 - [TEST_STEP][PASSED] - I Verify REST API Post Request Status Code &lt;Code&gt;: I Verify REST API Post Request Status Code &lt;Code&gt;&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][PASSED] - I Verify REST API Post Request Status Code &lt;Code&gt;&#xD;
+&#xD;
+2019-11-30 20:43:59 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Post A New Book Object: SCENARIO Post A New Book Object&#xD;
+&#xD;
+2019-11-30 20:43:59 - [TEST_STEP][PASSED] - 012 And Another Title Book Obeject Properties Are Available For Example: 012 And Another Title Book Obeject Properties Are Available For Example&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][PASSED] - 012 And Another Title Book Obeject Properties Are Available For Example&#xD;
+&#xD;
+2019-11-30 20:43:59 - [TEST_STEP][PASSED] - All Object Properties Are 012 Another Title Another Description Sample Text Another Excerpt Demo Text 2019-11-29T14:02:39.311Z Ready To Use For Making This POST API Request: All Object Properties Are 012 Another Title Another Description Sample Text Another Excerpt Demo Text 2019-11-29T14:02:39.311Z Ready To Use For Making This POST API Request&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191130_204353\Cucumber BDD\Feature Driven Test Suite\20191130_204353\requests\main\1.har&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][PASSED] - All Object Properties Are 012 Another Title Another Description Sample Text Another Excerpt Demo Text 2019-11-29T14:02:39.311Z Ready To Use For Making This POST API Request&#xD;
+&#xD;
+2019-11-30 20:43:59 - [TEST_STEP][PASSED] - I Verify REST API Post Request Status Code &lt;Code&gt;: I Verify REST API Post Request Status Code &lt;Code&gt;&#xD;
+&#xD;
+2019-11-30 20:43:59 - [MESSAGE][PASSED] - I Verify REST API Post Request Status Code &lt;Code&gt;&#xD;
+&#xD;
+2019-11-30 20:44:00 - [MESSAGE][PASSED] - Feature file: 'Include/features/BDD.feature' was passed&#xD;
+&#xD;
+2019-11-30 20:44:00 - [TEST_STEP][PASSED] - runFeatureFolder("Include/features"): All feature files in 'Include/features' were passed&#xD;
+&#xD;
+2019-11-30 20:44:00 - [MESSAGE][INFO] - Starting run keyword runFeatureFolder: 'Include/features' and extract report to folder: 'G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191130_204353\Cucumber BDD\Feature Driven Test Suite\20191130_204353/cucumber_report/1575125040174'...&#xD;
+&#xD;
+2019-11-30 20:44:02 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191130_204353\Cucumber BDD\Feature Driven Test Suite\20191130_204353\requests\main\2.har&#xD;
+&#xD;
+2019-11-30 20:44:02 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-30 20:44:03 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191130_204353\Cucumber BDD\Feature Driven Test Suite\20191130_204353\requests\main\3.har&#xD;
+&#xD;
+2019-11-30 20:44:03 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-30 20:44:03 - [MESSAGE][PASSED] - All feature files in 'Include/features' were passed&#xD;
+&#xD;
+2019-11-30 20:44:03 - [TEST_STEP][PASSED] - comment("Using Cucumber Runner Class"): Using Cucumber Runner Class&#xD;
+&#xD;
+2019-11-30 20:44:03 - [MESSAGE][INFO] - Using Cucumber Runner Class&#xD;
+&#xD;
+2019-11-30 20:44:03 - [TEST_STEP][PASSED] - runWithCucumberRunner(classRunner.sampleRunner): Run with 'classRunner.sampleRunner' was passed&#xD;
+&#xD;
+2019-11-30 20:44:04 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191130_204353\Cucumber BDD\Feature Driven Test Suite\20191130_204353\requests\main\4.har&#xD;
+&#xD;
+2019-11-30 20:44:04 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-30 20:44:04 - [MESSAGE][INFO] - HAR: G:\Katalon Studio\Katalon Workspace\REST API Service Workouts\Reports\20191130_204353\Cucumber BDD\Feature Driven Test Suite\20191130_204353\requests\main\5.har&#xD;
+&#xD;
+2019-11-30 20:44:04 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-11-30 20:44:04 - [MESSAGE][PASSED] - Run with 'classRunner.sampleRunner' was passed&#xD;
+&#xD;
+2019-11-30 20:44:04 - [MESSAGE][PASSED] - Test Cases/Cucumber BDD/Feature Driven Test Case&#xD;
+&#xD;
+2019-11-30 20:44:04 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null&#xD;
+&#xD;
+2019-11-30 20:44:04 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-11-30 20:44:04 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null&#xD;
+&#xD;
+2019-11-30 20:44:04 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestSuite: null&#xD;
+&#xD;
+2019-11-30 20:44:04 - [TEST_STEP][PASSED] - println(testSuiteContext.getTestSuiteId()): null&#xD;
+&#xD;
+2019-11-30 20:44:04 - [TEST_STEP][INCOMPLETE] - Start listener action : exportKatalonReports: This Katalon Studio version has been deprecated. Please upgrade Katalon Studio to the latest version.&#xD;
+&#xD;
+2019-11-30 20:44:04 - [MESSAGE][INFO] - This Katalon Studio version has been deprecated. Please upgrade Katalon Studio to the latest version.</system-out>
+            <system-err>2019-11-30 20:43:56 - [TEST_CASE][INCOMPLETE] - Test Cases/Cucumber BDD/Feature Driven Test Case: null</system-err>
+        </testcase>
+        <system-out>2019-11-30 20:43:55 - [TEST_SUITE][INCOMPLETE] - Feature Driven Test Suite: null</system-out>
+        <system-err>2019-11-30 20:43:55 - [TEST_SUITE][INCOMPLETE] - Feature Driven Test Suite: null</system-err>
+    </testsuite>
+</testsuites>

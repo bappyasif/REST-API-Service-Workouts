@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Feature Driven Test Suite,,Feature Driven Test Suite,,2019-11-30 20:43:55,2019-11-30 20:44:04,8.721s,INCOMPLETE
+,,,,,,,
+Test Cases/Cucumber BDD/Feature Driven Test Case,,Feature Driven Test Case,,2019-11-30 20:43:56,2019-11-30 20:44:04,8.397s,INCOMPLETE
+Start listener action : sampleBeforeTestCase,,,,2019-11-30 20:43:56,2019-11-30 20:43:56,0.012s,PASSED
+"runFeatureFile(""Include/features/BDD.feature"")",,,,2019-11-30 20:43:56,2019-11-30 20:44:04,8.118s,PASSED
+Start listener action : sampleAfterTestSuite,,,,2019-11-30 20:44:04,2019-11-30 20:44:04,0.002s,PASSED
+Start listener action : exportKatalonReports,,,,2019-11-30 20:44:04,2019-11-30 20:44:04,0.001s,INCOMPLETE

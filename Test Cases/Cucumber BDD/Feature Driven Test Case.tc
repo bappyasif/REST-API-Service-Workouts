@@ -3,6 +3,6 @@
    <description>Feature Driven Test Case</description>
    <name>Feature Driven Test Case</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Using Cucumber Runner Class</comment>
    <testCaseGuid>f30c54d1-74bf-472f-8d21-3c3413203295</testCaseGuid>
 </TestCaseEntity>
