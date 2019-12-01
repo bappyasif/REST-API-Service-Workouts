@@ -23,7 +23,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>http://fakerestapi.azurewebsites.net/api/Books/1</restUrl>
+   <restUrl>http://fakerestapi.azurewebsites.net/api/Books/${book_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

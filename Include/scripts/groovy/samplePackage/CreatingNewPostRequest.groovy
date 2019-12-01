@@ -27,6 +27,7 @@ import WebUiBuiltInKeywords as WebUI
 
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
+import org.aspectj.weaver.ast.Instanceof
 import org.openqa.selenium.By
 
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
@@ -46,6 +47,7 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
+import samplePackage.SampleCustomKeywordsExample
 
 
 class CreatingNewPostRequest {
@@ -54,20 +56,20 @@ class CreatingNewPostRequest {
 	 */
 	@Given("(\\d+) And (.*) Book Obeject Properties Are Available For Example")
 	def checkingBookIDAndTitle (int id, String name) {
-//		println id
-//		println name
-		
+		//		println id
+		//		println name
+
 		if(id != null) {
 			println id
 		} else {
 			KeywordUtil.markError("Non Empty ID Is Not Allowed")
 		}
-		
+
 		if (name == null) {
 			KeywordUtil.markError("Non Empty Title Is Not Allowed")
 		} else {
 			println name
-		}		
+		}
 	}
 
 	@When("All Object Properties Are (\\d+) (.*) (.*) (.*) (.*) Ready To Use For Making This POST API Request")
@@ -77,48 +79,61 @@ class CreatingNewPostRequest {
 		println description
 		println excerpt
 		println date
-		
-		ResponseObject responseStatus = WS.sendRequest(findTestObject('REST Example/Books Requests/Post New Book Request', [('book_id') : value, ('book_title') : title, ('book_description') : description, 
+
+		ResponseObject responseStatus = WS.sendRequest(findTestObject('REST Example/Books Requests/Post New Book Request', [('book_id') : value, ('book_title') : title, ('book_description') : description,
 			('book_excerpt') : excerpt, ('books_published') : date]))
-		
+
 		String statusCode = responseStatus.getStatusCode()
-		
+
 		// Was Trying Custom Keywords. Checkout verifyingCode Function For Demonstration.
 		//TestObject testObject = new TestObject()
 		//RequestObject requestObject = (RequestObject)testObject
 		//responseStatus = WSBuiltInKeywords.sendRequest(requestObject)
+
+		def customKeyword =  new samplePackage.SampleCustomKeywordsExample()
+		customKeyword.successfulRequestStatusCode(findTestObject('Object Repository/REST Example/Books Requests/Get Specefic Book Request', [('book_id') : value]))
+		//TestObject testObject = customKeyword.successfulRequestStatusCode(findTestObject('Object Repository/REST Example/Books Requests/Get Specefic Book Request', [('book_id') : value]))
+		//println ("Test Object : " +testObject)
+				
+//		if(testObject instanceof ResponseObject) {
+//			
+//		}
+		customKeyword.verifyStatusCode(findTestObject('Object Repository/REST Example/Books Requests/Get Specefic Book Request'), Integer.valueOf(statusCode))
+		//customKeyword.verifyStatusCode(findTestObject('Object Repository/REST Example/Books Requests/Get Specefic Book Request'), 200)
+		//customKeyword.verifyStatusCode(findTestObject('Object Repository/REST Example/Books Requests/Get Specefic Book Request'), Integer(statusCode))
+		//customKeyword.verifyStatusCode(findTestObject('Object Repository/REST Example/Books Requests/Get Specefic Book Request'), evaluate(statusCode))
+		//String statusCOde = customKeyword.verifyStatusCode(findTestObject('Object Repository/REST Example/Books Requests/Get Specefic Book Request'), 200)
+		//println ("Custom Keyword : "+statusCOde)
 		
-		def customKeyword =  new SampleCustomKeywordsExample()
-		customKeyword.successfulRequestStatusCode(findTestObject('REST Example/Books Requests/Get Specefic Book Request', [('book_id') : value]))
-		
+
 		verifyingCode(statusCode)
 	}
 
 	@Then("I Verify REST API Post Request Status Code (.*)")
 	def verifyingCode(String status) {
-		
+
 		println status
-		
+
 		//CustomKeywordDelegatingMetaClass.
 		//CustomKeywords.'samplePackage.SampleCustomKeywordsExample.successfulRequestStatusCode'(response)
-		
-//		TestObject request
-//		RequestObject requestObject = (RequestObject) request
-//		ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
-//		
-//		def paramTypes = new SampleCustomKeywordsExample(response)
-//		paramTypes.successfulRequestStatusCode() 
-		
-		
+
+		//		TestObject request
+		//		RequestObject requestObject = (RequestObject) request
+		//		ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
+		//
+		//		def paramTypes = new SampleCustomKeywordsExample(response)
+		//		paramTypes.successfulRequestStatusCode()
+
+
 		// Success Code Extraction For Specific Book Request Object
 		def customKeyword =  new SampleCustomKeywordsExample()
-//		ResponseObject responseStatus =  customKeyword.successfulRequestStatusCode(findTestObject('REST Example/Books Requests/Get Specefic Book Request', [('book_id') : 2]))
-//		//println responseStatus.getStatusCode()
-//		println responseStatus
+		//		ResponseObject responseStatus =  customKeyword.successfulRequestStatusCode(findTestObject('REST Example/Books Requests/Get Specefic Book Request', [('book_id') : 2]))
+		//		//println responseStatus.getStatusCode()
+		//		println responseStatus
 		ResponseObject responseStatus =  customKeyword.verifyStatusCode(findTestObject('REST Example/Books Requests/Get Specefic Book Request', [('book_id') : 2]), 200)
 		//println responseStatus.getStatusCode()
-//		String codeReturned = responseStatus.getStatusCode()
-//		println ("Code Retyurned : "+codeReturned)
+		//		String codeReturned = responseStatus.getStatusCode()
+		//		println ("Code Retyurned : "+codeReturned)
 	}
 
 }
