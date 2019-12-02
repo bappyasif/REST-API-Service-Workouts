@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\&quot;name\&quot;:\&quot;Bappy\&quot;,\&quot;salary\&quot;:\&quot;99999\&quot;,\&quot;age\&quot;:\&quot;23\&quot;}&quot;,
+  &quot;text&quot;: &quot;{\&quot;name\&quot;:\&quot;${employee_name}\&quot;,\&quot;salary\&quot;:\&quot;${salary_amount}\&quot;,\&quot;age\&quot;:\&quot;${employee_age}\&quot;}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -29,6 +29,27 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'Bappy'</defaultValue>
+      <description></description>
+      <id>5a9fdf93-7df8-4536-ad19-4c636880e50b</id>
+      <masked>false</masked>
+      <name>employee_name</name>
+   </variables>
+   <variables>
+      <defaultValue>99999999</defaultValue>
+      <description></description>
+      <id>5a7f54d8-e37b-4aa3-abe2-fa64304547aa</id>
+      <masked>false</masked>
+      <name>salary_amount</name>
+   </variables>
+   <variables>
+      <defaultValue>26</defaultValue>
+      <description></description>
+      <id>500e043f-676b-4a8d-9e81-3e95ca4b43a2</id>
+      <masked>false</masked>
+      <name>employee_age</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Dummy Example Test Case</description>
+   <name>Dummy Example Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e601bc0a-147e-4460-b51e-2b5107c6a8fe</testCaseGuid>
+</TestCaseEntity>

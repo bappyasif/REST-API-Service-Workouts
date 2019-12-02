@@ -16,12 +16,19 @@
    <httpBodyType>text</httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>http://dummy.restapiexample.com/api/v1/delete/2</restUrl>
+   <restUrl>http://dummy.restapiexample.com/api/v1/delete/${employee_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>2915</defaultValue>
+      <description></description>
+      <id>df13e5dd-39db-48d1-afef-eca7b14be678</id>
+      <masked>false</masked>
+      <name>employee_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

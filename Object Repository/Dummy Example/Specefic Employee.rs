@@ -12,12 +12,19 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://dummy.restapiexample.com/api/v1/employee/1</restUrl>
+   <restUrl>http://dummy.restapiexample.com/api/v1/employee/2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>d689a6b4-c3f4-488b-a938-3d107543e307</id>
+      <masked>false</masked>
+      <name>employee_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

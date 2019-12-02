@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\&quot;name\&quot;:\&quot;Bappy\&quot;,\&quot;salary\&quot;:\&quot;99999\&quot;,\&quot;age\&quot;:\&quot;32\&quot;}&quot;,
+  &quot;text&quot;: &quot;{\&quot;name\&quot;:\&quot;${employee_name}\&quot;,\&quot;salary\&quot;:\&quot;${salary_amount}\&quot;,\&quot;age\&quot;:\&quot;${employee_age}\&quot;}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -23,12 +23,40 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>http://dummy.restapiexample.com/api/v1/update/21</restUrl>
+   <restUrl>http://dummy.restapiexample.com/api/v1/update/${employee_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'Bappy Sarkar'</defaultValue>
+      <description></description>
+      <id>418abf94-42a4-4050-866e-66b2a65aef8e</id>
+      <masked>false</masked>
+      <name>employee_name</name>
+   </variables>
+   <variables>
+      <defaultValue>99999999999</defaultValue>
+      <description></description>
+      <id>8348084e-1231-4998-8e57-5494b0e39792</id>
+      <masked>false</masked>
+      <name>salary_amount</name>
+   </variables>
+   <variables>
+      <defaultValue>26</defaultValue>
+      <description></description>
+      <id>b117143a-dfbc-4f90-bfe5-6d2b84e78612</id>
+      <masked>false</masked>
+      <name>employee_age</name>
+   </variables>
+   <variables>
+      <defaultValue>23</defaultValue>
+      <description></description>
+      <id>8d98eb62-9602-424d-9d4f-6c2396425e48</id>
+      <masked>false</masked>
+      <name>employee_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
